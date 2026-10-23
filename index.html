@@ -260,6 +260,13 @@
       }
       .sub-steps .how { color: var(--ink); }
       .sub-steps .how b { font-weight: 700; }
+      .list-head { font-size: 22px; font-weight: 800; margin: 0 0 6px; letter-spacing: -0.01em; }
+      .list-sub { font-size: 14.5px; color: var(--ink-2); margin: 0 0 4px; word-break: keep-all; }
+      .date-head { font-size: 13.5px; font-weight: 800; color: var(--accent); margin: 20px 0 8px; }
+      .ev-item { display: flex; gap: 12px; align-items: baseline; padding: 12px 13px; border: 1px solid var(--line); border-radius: 12px; margin-bottom: 8px; text-decoration: none; color: var(--ink); }
+      .ev-item:active { background: var(--surface-2); }
+      .ev-time { flex: none; font-size: 13.5px; font-weight: 700; color: var(--ink-2); min-width: 42px; }
+      .ev-title { font-size: 15.5px; font-weight: 600; word-break: keep-all; overflow-wrap: break-word; }
       @media (prefers-reduced-motion: reduce) {
         .btn, .toast { transition: none; }
       }
@@ -307,6 +314,17 @@
         </div>
       </section>
 
+      <!-- 다가오는 일정 목록 (id 없이 접속한 경우) -->
+      <section class="card" id="listCard" hidden>
+        <span class="label">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
+          투자 일정
+        </span>
+        <h1 class="list-head">다가오는 투자 일정</h1>
+        <p class="list-sub">일정을 누르면 상세 내용과 캘린더 추가 버튼이 열려요.</p>
+        <div id="eventList"></div>
+      </section>
+
       <!-- 파라미터가 없는 경우 -->
       <section class="card" id="emptyCard" hidden>
         <div class="empty">
@@ -351,6 +369,7 @@
         var eventCard = document.getElementById("eventCard");
         var emptyCard = document.getElementById("emptyCard");
         var loadingCard = document.getElementById("loadingCard");
+        var listCard = document.getElementById("listCard");
         var toast = document.getElementById("toast");
         var toastTimer = null;
 
@@ -389,6 +408,7 @@
         function showEmpty() {
           loadingCard.hidden = true;
           eventCard.hidden = true;
+          listCard.hidden = true;
           emptyCard.hidden = false;
         }
 
@@ -561,6 +581,7 @@
 
           loadingCard.hidden = true;
           emptyCard.hidden = true;
+          listCard.hidden = true;
           eventCard.hidden = false;
           document.title = title + " · 투자 일정";
           document.getElementById("eventTitle").textContent = title;
@@ -608,6 +629,82 @@
           });
         }
 
+        /* ---------- 다가오는 일정 목록 렌더링 ---------- */
+        function dateKey(p) { return p.y * 10000 + p.mo * 100 + p.d; }
+        function timeKey(p) { return dateKey(p) * 1000000 + p.h * 10000 + p.mi * 100 + p.s; }
+        function nowSeoulParts() {
+          var d = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Seoul" }));
+          return { y: d.getFullYear(), mo: d.getMonth() + 1, d: d.getDate(), h: d.getHours(), mi: d.getMinutes(), s: d.getSeconds() };
+        }
+        var WEEKDAYS = ["일", "월", "화", "수", "목", "금", "토"];
+        function renderList(data) {
+          var items = [];
+          if (data) {
+            Object.keys(data).forEach(function (key) {
+              var ev = data[key];
+              if (!ev || !(ev.t || "").trim()) return;
+              var sp = parseISO(ev.s);
+              if (!sp) return;
+              var ep = parseISO(ev.e) || sp;
+              items.push({ key: key, ev: ev, sp: sp, ep: ep });
+            });
+          }
+          var now = nowSeoulParts();
+          var nowKey = timeKey(now);
+          var todayKey = dateKey(now);
+          items = items.filter(function (it) {
+            if (it.ev.allday) {
+              if (it.ev.e) return dateKey(it.ep) > todayKey;
+              return dateKey(it.sp) >= todayKey;
+            }
+            return timeKey(it.ep) >= nowKey;
+          });
+          items.sort(function (a, b) { return timeKey(a.sp) - timeKey(b.sp) || (a.key < b.key ? -1 : 1); });
+          if (!items.length) { showEmpty(); return; }
+          var box = document.getElementById("eventList");
+          box.textContent = "";
+          var lastDate = "";
+          items.forEach(function (it) {
+            var dk = it.sp.y + "-" + it.sp.mo + "-" + it.sp.d;
+            if (dk !== lastDate) {
+              lastDate = dk;
+              var wd = WEEKDAYS[new Date(Date.UTC(it.sp.y, it.sp.mo - 1, it.sp.d)).getUTCDay()];
+              var head = document.createElement("p");
+              head.className = "date-head";
+              head.textContent = it.sp.mo + "월 " + it.sp.d + "일 (" + wd + ")";
+              box.appendChild(head);
+            }
+            var a = document.createElement("a");
+            a.className = "ev-item";
+            a.href = "?id=" + encodeURIComponent(it.key);
+            var time = document.createElement("span");
+            time.className = "ev-time";
+            time.textContent = it.ev.allday ? "종일" : pad2(it.sp.h) + ":" + pad2(it.sp.mi);
+            var ttl = document.createElement("span");
+            ttl.className = "ev-title";
+            ttl.textContent = it.ev.t;
+            a.appendChild(time);
+            a.appendChild(ttl);
+            box.appendChild(a);
+          });
+          loadingCard.hidden = true;
+          emptyCard.hidden = true;
+          eventCard.hidden = true;
+          listCard.hidden = false;
+          document.title = "다가오는 투자 일정";
+        }
+        function loadList() {
+          loadingCard.hidden = false;
+          fetch("events.json", { cache: "no-store" }).then(function (res) {
+            if (!res.ok) throw new Error("http " + res.status);
+            return res.json();
+          }).then(function (data) {
+            renderList(data);
+          }).catch(function () {
+            showEmpty();
+          });
+        }
+
         /* ---------- 구독 주소 복사 ---------- */
         var subscribeCopyBtn = document.getElementById("subscribeCopyBtn");
         if (subscribeCopyBtn) {
@@ -631,7 +728,7 @@
               if (ev && (ev.t || "").trim()) {
                 renderEvent(ev, "");
               } else {
-                showEmpty();
+                renderList(data);
               }
             }).catch(function () {
               tryFetch(index + 1);
@@ -650,7 +747,7 @@
         };
         var legacyCalUrl = (params.get("a") || "").trim();
         if (!legacy.t) {
-          showEmpty();
+          loadList();
           return;
         }
         renderEvent(legacy, legacyCalUrl);

@@ -1062,4 +1062,17 @@ ACTION:DISPLAY
 TRIGGER:-PT1H
 END:VALARM
 END:VEVENT
+BEGIN:VEVENT
+UID:573d2d5a1b99cfd89138@invest.muse
+DTSTAMP:20261021T110000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261029
+SUMMARY:Oracle AI World 2026 (구 CloudWorld)
+DESCRIPTION:📌 관전 포인트\nOracle 공식 FAQ 기준 10/25~28(현지
+ 시간) 라스베이거스 The Venetian 개최\, 키노트는 10/26~28. 
+ 구 CloudWorld의 후신인 Oracle 최대 연례 행사. OCI·AI 에이전
+ 트·데이터베이스 신제품 발표와 경영진 키노트가 관전 
+ 포인트.\n\n🔗 이 일정 공유하기: https://hottory.github.io/inve
+ st-schedule-share/?id=1026-02
+END:VEVENT
 END:VCALENDAR
