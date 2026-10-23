@@ -20,6 +20,11 @@
         --accent-ink: #ffffff;
         --accent-soft: #e3f0ec;
         --gold: #b07d1e;
+        --tag-earnings: #2563eb; --tag-earnings-bg: #e2ebfd;
+        --tag-macro: #0b7a5c; --tag-macro-bg: #dcf2ea;
+        --tag-rate: #7c3aed; --tag-rate-bg: #ede6fd;
+        --tag-event: #bc5f08; --tag-event-bg: #fcebd7;
+        --tag-talk: #5b6b7c; --tag-talk-bg: #e7edf3;
         --shadow: 0 12px 32px rgba(20, 32, 44, 0.10);
         --radius: 18px;
       }
@@ -36,6 +41,11 @@
           --accent-ink: #06231b;
           --accent-soft: #123129;
           --gold: #e0a83e;
+          --tag-earnings: #8fb0ff; --tag-earnings-bg: #1e2c4f;
+          --tag-macro: #4cc9a4; --tag-macro-bg: #123129;
+          --tag-rate: #bb9bf5; --tag-rate-bg: #2d2149;
+          --tag-event: #f0ab63; --tag-event-bg: #3d2812;
+          --tag-talk: #a9b6c2; --tag-talk-bg: #232c36;
           --shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
         }
       }
@@ -267,6 +277,17 @@
       .ev-item:active { background: var(--surface-2); }
       .ev-time { flex: none; font-size: 13.5px; font-weight: 700; color: var(--ink-2); min-width: 42px; }
       .ev-title { font-size: 15.5px; font-weight: 600; word-break: keep-all; overflow-wrap: break-word; }
+      .tag { flex: none; font-size: 11.5px; font-weight: 800; letter-spacing: 0.01em; padding: 2.5px 8px; border-radius: 999px; margin-top: 1px; }
+      .tag-earnings { color: var(--tag-earnings); background: var(--tag-earnings-bg); }
+      .tag-macro { color: var(--tag-macro); background: var(--tag-macro-bg); }
+      .tag-rate { color: var(--tag-rate); background: var(--tag-rate-bg); }
+      .tag-event { color: var(--tag-event); background: var(--tag-event-bg); }
+      .tag-talk { color: var(--tag-talk); background: var(--tag-talk-bg); }
+      .tier-star { flex: none; font-size: 13px; margin-top: 1px; }
+      .legend { font-size: 12.5px; color: var(--ink-3); margin: 10px 0 0; }
+      .detail-tags { display: flex; align-items: center; gap: 7px; margin-bottom: 14px; }
+      .detail-tags .tag { font-size: 12.5px; padding: 4px 10px; }
+      .tier-badge { font-size: 12px; font-weight: 800; color: var(--gold); }
       .kakao-note { font-size: 13.5px; line-height: 1.6; color: var(--ink-2); background: var(--surface-2); border-radius: 10px; padding: 11px 13px; margin: 2px 0 0; word-break: keep-all; }
       @media (prefers-reduced-motion: reduce) {
         .btn, .toast { transition: none; }
@@ -281,6 +302,7 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>
           투자 일정
         </span>
+        <div class="detail-tags" id="eventTags" hidden></div>
         <h1 id="eventTitle"></h1>
         <div class="when" id="whenBlock" hidden>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
@@ -324,6 +346,7 @@
         </span>
         <h1 class="list-head">다가오는 투자 일정</h1>
         <p class="list-sub">일정을 누르면 상세 내용과 캘린더 추가 버튼이 열려요.</p>
+        <p class="legend">⭐ 표시는 중요 일정이에요.</p>
         <div id="eventList"></div>
       </section>
 
@@ -587,6 +610,16 @@
           eventCard.hidden = false;
           document.title = title + " · 투자 일정";
           document.getElementById("eventTitle").textContent = title;
+          var tagsBox = document.getElementById("eventTags");
+          tagsBox.textContent = "";
+          tagsBox.appendChild(makeTag(title));
+          if (isTierA(title)) {
+            var badge = document.createElement("span");
+            badge.className = "tier-badge";
+            badge.textContent = "⭐ 중요 일정";
+            tagsBox.appendChild(badge);
+          }
+          tagsBox.hidden = false;
 
           if (when) {
             document.getElementById("whenBlock").hidden = false;
@@ -635,6 +668,40 @@
           document.getElementById("copyBtn").addEventListener("click", function () {
             copyText(pageUrl, "링크가 복사됐어요");
           });
+        }
+
+        /* ---------- 카테고리 태그 · 중요도 판정 ---------- */
+        var CATEGORIES = [
+          { name: "금리", cls: "tag-rate", keys: ["금리 결정", "금통위", "fomc", "ecb", "boj", "기준금리"] },
+          { name: "실적", cls: "tag-earnings", keys: ["실적"] },
+          { name: "행사", cls: "tag-event", keys: ["gtc", "wwdc", "google i/o", "build", "devday", "re:invent", "ignite", "cloud next", "cloudworld", "ai world", "advancing ai", "innovation", "meta connect", "unpacked", "언팩", "sdc"] },
+          { name: "지표", cls: "tag-macro", keys: ["cpi", "pce", "ppi", "gdp", "고용", "실업", "pmi", "소비자", "서베이", "수출입", "무역", "소매판매", "주택", "lei", "선행지수", "물가", "심리지수", "제조업", "서비스업", "생산", "경기", "내구재", "재고", "산업활동", "동향"] },
+          { name: "발언", cls: "tag-talk", keys: ["발언", "연설", "인터뷰", "청문회", "국정감사"] }
+        ];
+        function categorize(title) {
+          var t = (title || "").toLowerCase();
+          for (var i = 0; i < CATEGORIES.length; i++) {
+            var c = CATEGORIES[i];
+            for (var j = 0; j < c.keys.length; j++) {
+              if (t.indexOf(c.keys[j]) !== -1) return c;
+            }
+          }
+          return CATEGORIES[CATEGORIES.length - 1];
+        }
+        var TIER_A_KEYS = ["삼성전자", "sk하이닉스", "nvidia", "엔비디아", "tsmc", "asml", "amd", "broadcom", "브로드컴", "micron", "마이크론", "intel", "인텔", "apple", "애플", "microsoft", "마이크로소프트", "alphabet", "구글", "amazon", "아마존", "meta", "메타", "tesla", "테슬라", "fomc", "금통위", "ecb", "boj", "cpi", "pce", "ppi", "고용보고서", "nfp", "gtc", "oracle", "오라클", "coreweave", "코어위브", "nebius", "lambda", "wwdc", "google i/o", "microsoft build", "devday", "re:invent", "microsoft ignite", "cloud next", "cloudworld", "ai world", "advancing ai", "intel innovation", "meta connect", "unpacked", "sdc"];
+        function isTierA(title) {
+          var t = (title || "").toLowerCase();
+          for (var i = 0; i < TIER_A_KEYS.length; i++) {
+            if (t.indexOf(TIER_A_KEYS[i]) !== -1) return true;
+          }
+          return false;
+        }
+        function makeTag(title) {
+          var c = categorize(title);
+          var tag = document.createElement("span");
+          tag.className = "tag " + c.cls;
+          tag.textContent = c.name;
+          return tag;
         }
 
         /* ---------- 다가오는 일정 목록 렌더링 ---------- */
@@ -692,6 +759,14 @@
             ttl.className = "ev-title";
             ttl.textContent = it.ev.t;
             a.appendChild(time);
+            a.appendChild(makeTag(it.ev.t));
+            if (isTierA(it.ev.t)) {
+              var star = document.createElement("span");
+              star.className = "tier-star";
+              star.textContent = "⭐";
+              star.title = "중요 일정";
+              a.appendChild(star);
+            }
             a.appendChild(ttl);
             box.appendChild(a);
           });
