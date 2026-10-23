@@ -295,8 +295,35 @@
       .ics-guide p:last-child { margin-bottom: 0; }
       .ics-guide-title { font-weight: 800; }
       .kakao-note { font-size: 14.5px; line-height: 1.6; color: var(--ink-2); background: var(--surface-2); border-radius: 10px; padding: 11px 13px; margin: 2px 0 0; word-break: keep-all; }
+      .sheet-backdrop {
+        position: fixed; inset: 0; background: rgba(10, 15, 20, 0.45);
+        opacity: 0; pointer-events: none; transition: opacity 0.18s ease; z-index: 40;
+      }
+      .sheet-backdrop.show { opacity: 1; pointer-events: auto; }
+      .sheet {
+        position: fixed; left: 0; right: 0; bottom: 0; z-index: 41;
+        background: var(--surface); border-radius: 20px 20px 0 0;
+        padding: 10px 18px calc(18px + env(safe-area-inset-bottom));
+        transform: translateY(105%); transition: transform 0.22s ease;
+        max-width: 480px; margin: 0 auto;
+        box-shadow: var(--shadow);
+      }
+      .sheet.show { transform: translateY(0); }
+      .sheet-handle { width: 40px; height: 4px; border-radius: 999px; background: var(--line); margin: 2px auto 12px; }
+      .sheet-title { font-size: 17px; font-weight: 800; margin: 0 0 10px; }
+      .sheet-opts { display: flex; flex-direction: column; gap: 8px; }
+      .sheet-opt {
+        display: flex; align-items: center; gap: 10px; width: 100%;
+        padding: 13px 14px; border: 1px solid var(--line); border-radius: 12px;
+        background: var(--surface); color: var(--ink); font: inherit; font-size: 16px; font-weight: 700;
+        cursor: pointer; text-decoration: none; text-align: left;
+        -webkit-tap-highlight-color: transparent;
+      }
+      .sheet-opt:active { background: var(--surface-2); }
+      .sheet-opt .emoji { font-size: 18px; line-height: 1; }
+      .sheet-hint { font-size: 13.5px; color: var(--ink-3); margin: 12px 2px 0; line-height: 1.55; word-break: keep-all; }
       @media (prefers-reduced-motion: reduce) {
-        .btn, .toast { transition: none; }
+        .btn, .toast, .sheet, .sheet-backdrop { transition: none; }
       }
     </style>
   </head>
@@ -406,6 +433,22 @@
 
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
+    <div class="sheet-backdrop" id="shareBackdrop" hidden></div>
+    <div class="sheet" id="shareSheet" role="dialog" aria-modal="true" aria-label="공유하기" hidden>
+      <div class="sheet-handle"></div>
+      <p class="sheet-title">공유하기</p>
+      <div class="sheet-opts">
+        <a class="sheet-opt" id="shareTelegram" href="#" target="_blank" rel="noopener"><span class="emoji" aria-hidden="true">✈️</span> 텔레그램으로 공유</a>
+        <a class="sheet-opt" id="shareX" href="#" target="_blank" rel="noopener"><span class="emoji" aria-hidden="true">𝕏</span> X(트위터)로 공유</a>
+        <a class="sheet-opt" id="shareFacebook" href="#" target="_blank" rel="noopener"><span class="emoji" aria-hidden="true">📘</span> 페이스북으로 공유</a>
+        <a class="sheet-opt" id="shareLine" href="#" target="_blank" rel="noopener"><span class="emoji" aria-hidden="true">💬</span> 라인으로 공유</a>
+        <a class="sheet-opt" id="shareSms" href="#"><span class="emoji" aria-hidden="true">✉️</span> 문자로 공유</a>
+        <a class="sheet-opt" id="shareMail" href="#"><span class="emoji" aria-hidden="true">📧</span> 이메일로 공유</a>
+        <button type="button" class="sheet-opt" id="shareCopy"><span class="emoji" aria-hidden="true">🔗</span> 링크 복사</button>
+      </div>
+      <p class="sheet-hint">카카오톡으로 보내려면 '링크 복사'를 눌러 대화창에 붙여넣어 주세요.</p>
+    </div>
+
     <script>
       (function () {
         var params = new URLSearchParams(window.location.search);
@@ -449,6 +492,43 @@
             fallback();
           }
         }
+
+        /* ---------- 공유 시트 (Web Share 미지원 환경용) ---------- */
+        var shareSheet = document.getElementById("shareSheet");
+        var shareBackdrop = document.getElementById("shareBackdrop");
+        var shareSheetTimer = null;
+        function openShareSheet(data) {
+          var url = encodeURIComponent(data.url);
+          var text = encodeURIComponent(data.text || data.url);
+          var title = encodeURIComponent(data.title || "");
+          document.getElementById("shareTelegram").href = "https://t.me/share/url?url=" + url + "&text=" + text;
+          document.getElementById("shareX").href = "https://twitter.com/intent/tweet?url=" + url + "&text=" + text;
+          document.getElementById("shareFacebook").href = "https://www.facebook.com/sharer/sharer.php?u=" + url;
+          document.getElementById("shareLine").href = "https://social-plugins.line.me/lineit/share?url=" + url;
+          document.getElementById("shareSms").href = "sms:?body=" + text + "%20" + url;
+          document.getElementById("shareMail").href = "mailto:?subject=" + title + "&body=" + text + "%0A" + url;
+          document.getElementById("shareCopy").onclick = function () {
+            closeShareSheet();
+            copyText(data.url, "링크가 복사됐어요");
+          };
+          shareSheet.hidden = false;
+          shareBackdrop.hidden = false;
+          if (shareSheetTimer) clearTimeout(shareSheetTimer);
+          requestAnimationFrame(function () {
+            shareSheet.classList.add("show");
+            shareBackdrop.classList.add("show");
+          });
+        }
+        function closeShareSheet() {
+          shareSheet.classList.remove("show");
+          shareBackdrop.classList.remove("show");
+          if (shareSheetTimer) clearTimeout(shareSheetTimer);
+          shareSheetTimer = setTimeout(function () {
+            shareSheet.hidden = true;
+            shareBackdrop.hidden = true;
+          }, 240);
+        }
+        shareBackdrop.addEventListener("click", closeShareSheet);
 
         function showEmpty() {
           loadingCard.hidden = true;
@@ -678,13 +758,13 @@
 
           document.getElementById("shareBtn").addEventListener("click", function () {
             var shareData = { title: title, text: title + (when ? " · " + when : ""), url: pageUrl };
-            if (navigator.share) {
+            if (navigator.share && (!navigator.canShare || navigator.canShare(shareData))) {
               navigator.share(shareData).catch(function (err) {
                 if (err && err.name === "AbortError") return; // 사용자가 취소
-                copyText(pageUrl, "링크가 복사됐어요");
+                openShareSheet(shareData);
               });
             } else {
-              copyText(pageUrl, "링크가 복사됐어요");
+              openShareSheet(shareData);
             }
           });
 
