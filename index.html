@@ -267,6 +267,7 @@
       .ev-item:active { background: var(--surface-2); }
       .ev-time { flex: none; font-size: 13.5px; font-weight: 700; color: var(--ink-2); min-width: 42px; }
       .ev-title { font-size: 15.5px; font-weight: 600; word-break: keep-all; overflow-wrap: break-word; }
+      .kakao-note { font-size: 13.5px; line-height: 1.6; color: var(--ink-2); background: var(--surface-2); border-radius: 10px; padding: 11px 13px; margin: 2px 0 0; word-break: keep-all; }
       @media (prefers-reduced-motion: reduce) {
         .btn, .toast { transition: none; }
       }
@@ -299,6 +300,7 @@
           <button type="button" class="btn btn-secondary" id="shareBtn">
             <span class="emoji" aria-hidden="true">📤</span> 공유하기
           </button>
+          <p class="kakao-note" id="kakaoNotice" hidden>카카오톡 브라우저에서는 파일 다운로드가 막힐 수 있어요. 캘린더 파일이 받아지지 않으면 오른쪽 위 메뉴에서 &#39;다른 브라우저로 열기&#39;를 눌러주세요.</p>
           <button type="button" class="btn btn-secondary" id="copyBtn">
             <span class="emoji" aria-hidden="true">🔗</span> 링크 복사
           </button>
@@ -607,7 +609,13 @@
           var icsBtn = document.getElementById("icsBtn");
           if (hasTimes) {
             icsBtn.hidden = false;
-            icsBtn.addEventListener("click", function () { downloadICS(ev); });
+            icsBtn.addEventListener("click", function () {
+              if (eventId) {
+                window.location.href = "ics/" + encodeURIComponent(eventId) + ".ics";
+              } else {
+                downloadICS(ev);
+              }
+            });
           }
 
           var pageUrl = window.location.href;
@@ -703,6 +711,12 @@
           }).catch(function () {
             showEmpty();
           });
+        }
+
+        /* ---------- 카카오톡 인앱 브라우저 안내 ---------- */
+        if (/KAKAOTALK/i.test(navigator.userAgent || "")) {
+          var kakaoNotice = document.getElementById("kakaoNotice");
+          if (kakaoNotice) kakaoNotice.hidden = false;
         }
 
         /* ---------- 구독 주소 복사 ---------- */
