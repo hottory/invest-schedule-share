@@ -322,8 +322,35 @@
       .sheet-opt:active { background: var(--surface-2); }
       .sheet-opt .emoji { font-size: 18px; line-height: 1; }
       .sheet-hint { font-size: 13.5px; color: var(--ink-3); margin: 12px 2px 0; line-height: 1.55; word-break: keep-all; }
+      .fab {
+        position: fixed; right: 16px; bottom: calc(18px + env(safe-area-inset-bottom)); z-index: 30;
+        display: inline-flex; align-items: center; gap: 6px;
+        padding: 12px 16px; border: none; border-radius: 999px;
+        background: var(--accent); color: var(--accent-ink);
+        font: inherit; font-size: 15px; font-weight: 800;
+        box-shadow: 0 8px 22px rgba(20, 32, 44, 0.28);
+        cursor: pointer; -webkit-tap-highlight-color: transparent;
+      }
+      .fab:active { transform: scale(0.97); }
+      .fab-menu {
+        position: fixed; right: 16px; bottom: calc(76px + env(safe-area-inset-bottom)); z-index: 30;
+        width: 252px; max-width: calc(100vw - 32px);
+        background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+        box-shadow: var(--shadow); padding: 8px;
+        opacity: 0; transform: translateY(8px); pointer-events: none;
+        transition: opacity 0.16s ease, transform 0.16s ease;
+      }
+      .fab-menu.show { opacity: 1; transform: translateY(0); pointer-events: auto; }
+      .fab-menu a {
+        display: flex; align-items: center; gap: 10px;
+        padding: 12px; border-radius: 10px;
+        color: var(--ink); text-decoration: none; font-size: 15.5px; font-weight: 700;
+      }
+      .fab-menu a:active { background: var(--surface-2); }
+      .fab-menu .emoji { font-size: 17px; line-height: 1; flex: none; }
+      .fab-menu .desc { display: block; font-size: 13px; font-weight: 500; color: var(--ink-3); margin-top: 1px; }
       @media (prefers-reduced-motion: reduce) {
-        .btn, .toast, .sheet, .sheet-backdrop { transition: none; }
+        .btn, .toast, .sheet, .sheet-backdrop, .fab-menu { transition: none; }
       }
     </style>
   </head>
@@ -449,6 +476,13 @@
       <p class="sheet-hint">카카오톡으로 보내려면 '링크 복사'를 눌러 대화창에 붙여넣어 주세요.</p>
     </div>
 
+    <button type="button" class="fab" id="fabBtn" aria-haspopup="true" aria-expanded="false">❓ 상세·문의</button>
+    <nav class="fab-menu" id="fabMenu" aria-label="채널과 문의" hidden>
+      <a href="https://m.blog.naver.com/yeonwoomyung" target="_blank" rel="noopener"><span class="emoji" aria-hidden="true">📝</span><span>블로그 「테크 x 머니」<span class="desc">일정 원문과 결과 해설</span></span></a>
+      <a href="https://www.youtube.com/@techhanip_official" target="_blank" rel="noopener"><span class="emoji" aria-hidden="true">▶️</span><span>유튜브 「테크한입」<span class="desc">60초 브리핑 영상</span></span></a>
+      <a href="https://m.blog.naver.com/yeonwoomyung/224450015655" target="_blank" rel="noopener"><span class="emoji" aria-hidden="true">❓</span><span>서비스 안내·문의<span class="desc">공지글에 비밀댓글로 문의</span></span></a>
+    </nav>
+
     <script>
       (function () {
         var params = new URLSearchParams(window.location.search);
@@ -529,6 +563,33 @@
           }, 240);
         }
         shareBackdrop.addEventListener("click", closeShareSheet);
+
+        /* ---------- 플로팅 상세·문의 버튼 ---------- */
+        var fabBtn = document.getElementById("fabBtn");
+        var fabMenu = document.getElementById("fabMenu");
+        var fabTimer = null;
+        function toggleFabMenu(force) {
+          var willShow = typeof force === "boolean" ? force : fabMenu.hidden;
+          if (willShow) {
+            fabMenu.hidden = false;
+            if (fabTimer) clearTimeout(fabTimer);
+            requestAnimationFrame(function () { fabMenu.classList.add("show"); });
+            fabBtn.setAttribute("aria-expanded", "true");
+          } else {
+            fabMenu.classList.remove("show");
+            fabBtn.setAttribute("aria-expanded", "false");
+            if (fabTimer) clearTimeout(fabTimer);
+            fabTimer = setTimeout(function () { fabMenu.hidden = true; }, 180);
+          }
+        }
+        fabBtn.addEventListener("click", function (e) {
+          e.stopPropagation();
+          toggleFabMenu();
+        });
+        fabMenu.addEventListener("click", function () { toggleFabMenu(false); });
+        document.addEventListener("click", function (e) {
+          if (!fabMenu.hidden && !fabMenu.contains(e.target)) toggleFabMenu(false);
+        });
 
         function showEmpty() {
           loadingCard.hidden = true;
