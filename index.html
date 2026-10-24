@@ -301,7 +301,8 @@
       .tag-rate { color: var(--tag-rate); background: var(--tag-rate-bg); }
       .tag-event { color: var(--tag-event); background: var(--tag-event-bg); }
       .tag-talk { color: var(--tag-talk); background: var(--tag-talk-bg); }
-      .tier-star { flex: none; font-size: 14px; margin-top: 1px; }
+      .tag-col { display: flex; flex-direction: column; align-items: center; gap: 3px; flex: none; }
+      .tier-star { font-size: 13px; line-height: 1; }
       .legend { font-size: 13.5px; color: var(--ink-3); margin: 10px 0 0; }
       .detail-tags { display: flex; align-items: center; gap: 7px; margin-bottom: 14px; }
       .detail-tags .tag { font-size: 13.5px; padding: 4px 10px; }
@@ -930,14 +931,17 @@
             ttl.className = "ev-title";
             ttl.textContent = it.ev.t;
             a.appendChild(time);
-            a.appendChild(makeTag(it.ev.t));
+            var tagCol = document.createElement("span");
+            tagCol.className = "tag-col";
+            tagCol.appendChild(makeTag(it.ev.t));
             if (isTierA(it.ev.t)) {
               var star = document.createElement("span");
               star.className = "tier-star";
               star.textContent = "⭐";
               star.title = "중요 일정";
-              a.appendChild(star);
+              tagCol.appendChild(star);
             }
+            a.appendChild(tagCol);
             a.appendChild(ttl);
             box.appendChild(a);
           });
