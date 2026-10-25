@@ -373,7 +373,8 @@
         .btn, .toast, .sheet, .sheet-backdrop, .fab-menu { transition: none; }
       }
     </style>
-  </head>
+  <script data-goatcounter="https://techhanip.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</head>
   <body>
     <main class="wrap">
       <img class="top-banner" src="banner.jpg" alt="글로벌 투자 일정 — 테크 x 머니. FOMC · 금리 결정 · 빅테크 실적 · 경제지표, 향후 2주 일정을 한눈에 확인하세요." />
@@ -1017,5 +1018,20 @@
         renderEvent(legacy, legacyCalUrl);
       })();
     </script>
-  </body>
+  <script>
+(function () {
+  function track(path) {
+    if (window.goatcounter) { window.goatcounter.count({ path: path }); }
+  }
+  function bind(id, path) {
+    var el = document.getElementById(id);
+    if (el) { el.addEventListener('click', function () { track(path); }); }
+  }
+  bind('calendarBtn', '/event/add-google');
+  bind('icsBtn', '/event/add-ics');
+  bind('shareBtn', '/event/share');
+  bind('subscribeCopyBtn', '/event/subscribe');
+})();
+</script>
+</body>
 </html>
