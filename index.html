@@ -155,6 +155,10 @@
         border-color: var(--line);
       }
       .btn .emoji { font-size: 18px; line-height: 1; }
+      /* 2번째 버튼(icsBtn)만: 긴 문구가 360px 폭에서 버튼을 벗어나지 않도록
+         접두사 "이 일정을"은 12px, 본문은 14px로 줄인다. 1번째 버튼은 그대로. */
+      #icsBtn { font-size: 14px; }
+      #icsBtn .btn-prefix { font-size: 12px; }
       .btn[hidden] { display: none; }
       .empty {
         text-align: center;
@@ -415,7 +419,7 @@
             <span class="emoji" aria-hidden="true">📅</span> <span>이 일정을 <span class="hl">구글 캘린더에 추가</span></span>
           </a>
           <button type="button" class="btn btn-primary" id="icsBtn" hidden>
-            <span class="emoji" aria-hidden="true">📱</span> <span>이 일정을 <span class="hl">아이폰/갤럭시 캘린더에 반영</span></span>
+            <span class="emoji" aria-hidden="true">📱</span> <span><span class="btn-prefix">이 일정을 </span><span class="hl">아이폰/갤럭시 캘린더에 반영</span></span>
           </button>
           <p class="btn-hint" id="icsHint" hidden>(.ics 파일을 다운로드한 뒤, 받은 파일을 눌러 열면 설치돼요)</p>
           <div class="ics-guide" id="icsGuide" hidden>
