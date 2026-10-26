@@ -388,8 +388,9 @@
       .result-sub { font-size: 14px; line-height: 1.6; color: var(--ink-2); margin: 0 0 14px; }
       .res-item { display: flex; gap: 12px; align-items: flex-start; padding: 12px 2px; border-bottom: 1px dashed var(--line); }
       .res-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
-      .res-title { font-size: 16px; font-weight: 700; line-height: 1.35; overflow-wrap: anywhere; }
-      .res-line { font-size: 14px; line-height: 1.55; color: var(--ink); font-weight: 400; border-left: 3px solid var(--gold); padding-left: 10px; overflow-wrap: anywhere; }
+      .res-title { font-size: 16px; font-weight: 700; line-height: 1.35; word-break: keep-all; overflow-wrap: break-word; }
+      .res-paren { font-weight: 400; }
+      .res-line { font-size: 14px; line-height: 1.55; color: var(--ink); font-weight: 400; border-left: 3px solid var(--gold); padding-left: 10px; word-break: keep-all; overflow-wrap: break-word; }
       .res-insight { color: var(--gold); }
       .res-line.muted { color: var(--ink-3); font-weight: 500; border-left-color: var(--line); }
 </style>
@@ -1099,6 +1100,12 @@
           var esc = s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
           return esc.replace(/(상회|하회|부합|동결|인상|인하)/g, '<b class="res-insight">$1</b>');
         }
+        // 결과 제목: 괄호 안(예: 미국 장전, 9월)은 볼드 해제. 괄호 밖 본문만 볼드 유지.
+        // 먼저 이스케이프한 뒤 괄호 구간만 span으로 감싸므로 제목 내 HTML이 실행되지 않는다.
+        function titleHTML(s) {
+          var esc = s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+          return esc.replace(/\(([^)]*)\)/g, '<span class="res-paren">($1)</span>');
+        }
         function renderResults() {
           var box = document.getElementById("resultList");
           if (!box || !RESULTS_WEEKS) return;
@@ -1166,7 +1173,7 @@
                 body.className = "res-body";
                 var ttl = document.createElement("div");
                 ttl.className = "res-title";
-                ttl.textContent = it.title;
+                ttl.innerHTML = titleHTML(it.title);
                 var line = document.createElement("div");
                 line.className = "res-line" + (it.result ? "" : " muted");
                 if (it.result) line.innerHTML = hiInsight(it.result);
