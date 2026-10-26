@@ -390,6 +390,7 @@
       .res-body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
       .res-title { font-size: 16px; font-weight: 700; line-height: 1.35; word-break: keep-all; overflow-wrap: break-word; }
       .res-paren { font-weight: 400; }
+      .ev-title .res-paren, #eventTitle .res-paren { font-weight: 400; }
       .res-line { font-size: 14px; line-height: 1.55; color: var(--ink); font-weight: 400; border-left: 3px solid var(--gold); padding-left: 10px; word-break: keep-all; overflow-wrap: break-word; }
       .res-insight { color: var(--gold); }
       .res-line.muted { color: var(--ink-3); font-weight: 500; border-left-color: var(--line); }
@@ -822,7 +823,7 @@
           listCard.hidden = true;
           eventCard.hidden = false;
           document.title = title + " · 투자 일정";
-          document.getElementById("eventTitle").textContent = title;
+          document.getElementById("eventTitle").innerHTML = titleHTML(title);
           var tagsBox = document.getElementById("eventTags");
           tagsBox.textContent = "";
           tagsBox.appendChild(makeTag(title));
@@ -1072,7 +1073,7 @@
             }
             var ttl = document.createElement("span");
             ttl.className = "ev-title";
-            ttl.textContent = it.ev.t;
+            ttl.innerHTML = titleHTML(it.ev.t);
             body.appendChild(tagRow);
             body.appendChild(ttl);
             if (it.ev.d) {
