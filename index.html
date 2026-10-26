@@ -868,7 +868,9 @@
             });
           }
 
-          var pageUrl = window.location.href;
+          // 공유·복사 링크는 추적 꼬리표(utm_*, fbclid 등)를 빼고 일정 번호(id)만 남긴다.
+          // 들어온 주소에 꼬리표가 붙어 있어도 공유받는 사람에게는 깨끗한 주소가 전달된다.
+          var pageUrl = window.location.origin + window.location.pathname + (eventId ? "?id=" + encodeURIComponent(eventId) : "");
 
           document.getElementById("shareBtn").addEventListener("click", function () {
             var shareData = { title: title, text: title + (when ? " · " + when : "") + " — 투자 일정 by 블로그 「테크 x 머니」", url: pageUrl };
