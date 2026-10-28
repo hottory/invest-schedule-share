@@ -1141,7 +1141,8 @@
             })(wHead, wBody, wChev);
             box.appendChild(wHead);
             box.appendChild(wBody);
-            wk.days.forEach(function (day) {
+            // 결과 날짜는 최신 순으로 표시 (데이터는 시간 순 유지, 렌더링만 역순)
+            [...wk.days].reverse().forEach(function (day) {
               var head = document.createElement("div");
               head.className = "date-head";
               var num = document.createElement("span");
