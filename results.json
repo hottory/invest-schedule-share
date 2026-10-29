@@ -1,56 +1,8 @@
 [
  {
   "title": "최근 7일",
-  "range": "10.23~10.29",
+  "range": "10.24~10.30",
   "days": [
-   {
-    "date": "10.23",
-    "wd": "금요일",
-    "items": [
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": false,
-      "title": "American Express 3분기 실적(미국 장전)",
-      "result": "조정 EPS $4.68(+13%, 컨센서스 상회), 매출 $20.06B(+9%, 대체로 부합)."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": false,
-      "title": "SLB 3분기 실적(미국 장전)",
-      "result": "조정 EPS $0.64(컨센서스 상회, 전년 대비 -7%), 매출 $9.45B(+6%, 사상 최대·컨센서스 상회)."
-     },
-     {
-      "chip": "매크로 지표",
-      "cls": "tag-macro",
-      "star": false,
-      "title": "한국은행 3분기 실질 GDP 속보(예정)",
-      "result": null
-     },
-     {
-      "chip": "매크로 지표",
-      "cls": "tag-macro",
-      "star": false,
-      "title": "일본 소비자물가지수(9월, 예정)",
-      "result": "9월 근원 CPI 전년 대비 +2.1%(전망 부합, 8월 1.7%) — 9개월 만에 BOJ 목표 상회."
-     },
-     {
-      "chip": "매크로 지표",
-      "cls": "tag-macro",
-      "star": false,
-      "title": "S&P 글로벌 PMI 속보치(10월, 예정)",
-      "result": "종합 PMI 57.6(9월 58.4, 속보) — 제조업 56.0으로 53개월 만에 최고, 서비스업 57.9로 둔화."
-     },
-     {
-      "chip": "매크로 지표",
-      "cls": "tag-macro",
-      "star": false,
-      "title": "미국 미시간대 소비자심리지수 확정치(10월)",
-      "result": "10월 확정치 48.0(속보 46.3에서 상향, 9월 48.1)."
-     }
-    ]
-   },
    {
     "date": "10.26",
     "wd": "월요일",
@@ -180,68 +132,152 @@
       "result": "9월 도매재고 전월 대비 0.6% 증가(예상 0.5% 상회), 잔액 1조 11.5억 달러(약 1,358조원, 1달러=1,343원 기준)로 8개월 연속 증가."
      }
     ]
+   },
+   {
+    "date": "10.29",
+    "wd": "목요일",
+    "items": [
+     {
+      "chip": "매크로 지표",
+      "cls": "tag-macro",
+      "star": false,
+      "title": "한국은행 10월 기업경기조사·ESI(시각 미확정)",
+      "result": "10월 전산업 기업심리지수(CBSI) 104.2로 전월비 5.1p 상승, 2022년 8월 이후 최고."
+     },
+     {
+      "chip": "금리 결정",
+      "cls": "tag-rate",
+      "star": true,
+      "title": "FOMC 10월 금리 결정·성명",
+      "result": "기준금리 3.75~4.00% 동결(10-2, 쿡·해맥 인상 소수 의견)."
+     },
+     {
+      "chip": "금리 결정",
+      "cls": "tag-rate",
+      "star": true,
+      "title": "FOMC 의장(Warsh) 기자회견",
+      "result": "워시 의장: 인플레가 6년 가까이 목표를 상회, 물가 안정이 최우선."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": true,
+      "title": "Alphabet 3Q 실적(미국 장후)",
+      "result": "3Q 매출 1,275.8억 달러(약 170조8천억원, 전년비 25% 증가)로 컨센서스 소폭 하회."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "Ford Motor 3Q 실적 (장후)",
+      "result": "3Q 매출 495.3억 달러(약 66조3천억원, 전년비 2% 감소), 순이익 20.5억 달러, 조정 EPS 0.49달러로 컨센서스 상회."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "KLA FY27 1Q 실적(미국 장후)",
+      "result": "FY27 1Q 매출 41.4억 달러(약 5조5천억원, 전년비 28.9% 증가), 비GAAP EPS 1.22달러로 컨센서스 상회."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": true,
+      "title": "Microsoft FY27 1Q 실적(미국 장후)",
+      "result": "FY27 1Q 매출 923억 달러(약 123조6천억원, 전년비 19% 증가), 조정 EPS 4.89달러로 컨센서스 상회."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "삼성SDI 3Q 실적",
+      "result": "3Q 매출 4조6,856억원(전년비 52.6% 증가), 영업이익 4,078억원으로 흑자 전환, 12분기 만에 최대."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": true,
+      "title": "삼성전자 3Q 확정실적",
+      "result": "3Q 확정 매출 195조2,532억원, 영업이익 107조4,405억원으로 잠정 유지, 4분기 연속 역대 최대."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "SK이노베이션 3Q 실적",
+      "result": "3Q 매출 28조7,738억원, 영업이익 3조7,043억원으로 역대 최대."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "한화에어로스페이스 3Q 실적",
+      "result": "3Q 매출 6조943억원(전년비 6.0% 감소), 영업이익 4,520억원(46.2% 감소), 당기순손실 367억원으로 적자 전환."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "Eli Lilly 3Q 실적(미국 장전, 예정)",
+      "result": "3Q 매출 244억 달러(약 32조7천억원, 전년비 39% 증가), 조정 EPS 7.48달러로 컨센서스 상회."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "Mastercard 3Q 실적(미국 장전, 예정)",
+      "result": "3Q 매출 98.1억 달러(약 13조1천억원, 전년비 14% 증가), 조정 EPS 5.31달러로 컨센서스 상회."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "Merck 3Q 실적(미국 장전)",
+      "result": "3Q 매출 180.9억 달러(약 24조2천억원, 전년비 5% 증가), 조정 EPS 2.49달러로 컨센서스 상회."
+     },
+     {
+      "chip": "매크로 지표",
+      "cls": "tag-macro",
+      "star": false,
+      "title": "미국 3분기 GDP 속보치",
+      "result": "3분기 GDP 속보치 연율 3.4%(2분기 2.2%, 전망 3.1~3.2% 상회)."
+     },
+     {
+      "chip": "매크로 지표",
+      "cls": "tag-macro",
+      "star": true,
+      "title": "미국 9월 PCE 물가지수·개인소득/소비지출",
+      "result": "9월 PCE 전년 대비 3.6%(전월 3.4%), 전월비 0.5%."
+     },
+     {
+      "chip": "매크로 지표",
+      "cls": "tag-macro",
+      "star": false,
+      "title": "미국 주간 신규 실업수당 청구건수",
+      "result": "주간 신규 실업수당 청구 19만4천건(전주 19만5천건, 전망 19만9천건 하회)."
+     },
+     {
+      "chip": "금리 결정",
+      "cls": "tag-rate",
+      "star": true,
+      "title": "ECB 통화정책회의 금리 결정",
+      "result": "수신금리 2.50%·리파이낸싱 2.65%·한계대출 2.90% 전원일치 동결."
+     },
+     {
+      "chip": "금리 결정",
+      "cls": "tag-rate",
+      "star": true,
+      "title": "ECB Lagarde 총재 기자회견",
+      "result": "라가르드 총재: 금리 인상 논의했으나 동결로 만장일치 합의."
+     }
+    ]
    }
   ]
  },
  {
   "title": "이전 7일",
-  "range": "10.16~10.22",
+  "range": "10.17~10.23",
   "days": [
-   {
-    "date": "10.16",
-    "wd": "금요일",
-    "items": [
-     {
-      "chip": "주요 이벤트·발언",
-      "cls": "tag-event",
-      "star": false,
-      "title": "유로존 HICP 확정치(9월, 예정)",
-      "result": "확정치 3.8% YoY(속보치 그대로, 8월 3.2%에서 상승)."
-     },
-     {
-      "chip": "매크로 지표",
-      "cls": "tag-macro",
-      "star": false,
-      "title": "한국 수출입물가지수(9월 잠정)",
-      "result": "수입물가 +1.7% MoM(4개월 만 상승 — 두바이유 $113.71/배럴(약 15만2천원, 1달러=1,334원 기준)·+28.1%), 수출물가 -0.8% MoM(2개월 연속·원달러 1359원 -3.4%)."
-     },
-     {
-      "chip": "주요 이벤트·발언",
-      "cls": "tag-event",
-      "star": false,
-      "title": "클리블랜드 연은 Hammack 총재 연설",
-      "result": "뉴욕 골드만삭스 행사."
-     },
-     {
-      "chip": "매크로 지표",
-      "cls": "tag-macro",
-      "star": false,
-      "title": "한국 고용동향(9월)",
-      "result": "취업자 2926.6만명(+11.3만명 YoY, 8월 대비 증가폭 축소), 실업률 2.0%(-0.1%p)."
-     },
-     {
-      "chip": "주요 이벤트·발언",
-      "cls": "tag-event",
-      "star": false,
-      "title": "연준 Warsh 의장 연설",
-      "result": "방콕 IMF·세계은행 연차총회 연설."
-     },
-     {
-      "chip": "매크로 지표",
-      "cls": "tag-macro",
-      "star": false,
-      "title": "미국 수입·수출물가지수(9월)",
-      "result": "수입물가 +1.1% MoM(예상 +0.6%), +8.1% YoY — 2022년 7월 이후 최대 연간 상승률."
-     },
-     {
-      "chip": "매크로 지표",
-      "cls": "tag-macro",
-      "star": false,
-      "title": "미국 산업생산·설비가동률(9월)",
-      "result": "산업생산 +0.7% MoM(예상 +0.4%), 6개월 연속 증가·+2.2% YoY(2022년 9월 이후 최대)."
-     }
-    ]
-   },
    {
     "date": "10.19",
     "wd": "월요일",
@@ -487,6 +523,54 @@
       "star": false,
       "title": "미국 경기선행지수(9월, 예정)",
       "result": "9월 LEI 99.6(2016=100), 전월 대비 변동 없음(컨센서스 -0.2% 대비 소폭 상회), 8월 -0.1%."
+     }
+    ]
+   },
+   {
+    "date": "10.23",
+    "wd": "금요일",
+    "items": [
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "American Express 3분기 실적(미국 장전)",
+      "result": "조정 EPS $4.68(+13%, 컨센서스 상회), 매출 $20.06B(+9%, 대체로 부합)."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "SLB 3분기 실적(미국 장전)",
+      "result": "조정 EPS $0.64(컨센서스 상회, 전년 대비 -7%), 매출 $9.45B(+6%, 사상 최대·컨센서스 상회)."
+     },
+     {
+      "chip": "매크로 지표",
+      "cls": "tag-macro",
+      "star": false,
+      "title": "한국은행 3분기 실질 GDP 속보(예정)",
+      "result": null
+     },
+     {
+      "chip": "매크로 지표",
+      "cls": "tag-macro",
+      "star": false,
+      "title": "일본 소비자물가지수(9월, 예정)",
+      "result": "9월 근원 CPI 전년 대비 +2.1%(전망 부합, 8월 1.7%) — 9개월 만에 BOJ 목표 상회."
+     },
+     {
+      "chip": "매크로 지표",
+      "cls": "tag-macro",
+      "star": false,
+      "title": "S&P 글로벌 PMI 속보치(10월, 예정)",
+      "result": "종합 PMI 57.6(9월 58.4, 속보) — 제조업 56.0으로 53개월 만에 최고, 서비스업 57.9로 둔화."
+     },
+     {
+      "chip": "매크로 지표",
+      "cls": "tag-macro",
+      "star": false,
+      "title": "미국 미시간대 소비자심리지수 확정치(10월)",
+      "result": "10월 확정치 48.0(속보 46.3에서 상향, 9월 48.1)."
      }
     ]
    }
