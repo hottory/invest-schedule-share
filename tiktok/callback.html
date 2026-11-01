@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>TechxMoney Uploader — TikTok Authorization</title>
+<meta name="description" content="Authorization callback for TechxMoney Uploader. After you authorize on TikTok, you are redirected here with an authorization code." />
+<style>
+  :root { --bg:#f4f6f8; --surface:#fff; --ink:#141a21; --ink2:#4b5764; --ink3:#8494a3; --line:#dde3e9; --accent:#0b5e4b; --accent-soft:#e3f0ec; --gold:#b07d1e; --radius:18px; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic",sans-serif; line-height:1.6; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:640px; margin:0 auto; padding:28px 18px 48px; }
+  .card { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:26px 22px; margin-bottom:16px; }
+  .label { display:inline-block; font-size:13px; font-weight:700; color:var(--accent); background:var(--accent-soft); border-radius:999px; padding:5px 11px; margin-bottom:14px; }
+  h1 { font-size:26px; line-height:1.3; margin:0 0 10px; letter-spacing:-.01em; }
+  h2 { font-size:19px; margin:0 0 8px; }
+  p { margin:0 0 12px; font-size:16px; color:var(--ink); }
+  p.lead { font-size:17px; color:var(--ink2); }
+  a { color:var(--accent); }
+  .note { background:#fdf6e3; border:1px solid #e8d9a8; border-radius:12px; padding:14px 15px; font-size:15px; margin:0 0 12px; }
+  .note b { font-weight:700; }
+  .codebox { background:#f4f6f8; border:1px solid var(--line); border-radius:12px; padding:14px 15px; font-family:ui-monospace,Menlo,Consolas,monospace; font-size:14px; word-break:break-all; overflow-wrap:anywhere; margin:0 0 12px; }
+  button { font:inherit; font-size:16px; font-weight:700; color:#fff; background:var(--accent); border:1px solid transparent; border-radius:12px; padding:12px 18px; cursor:pointer; }
+  button:active { transform:scale(0.98); }
+  nav { font-size:15px; }
+  nav a { margin-right:16px; }
+  footer { font-size:14px; color:var(--ink3); }
+  .meta { font-size:14px; color:var(--ink3); }
+  [hidden] { display:none !important; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <section class="card">
+    <span class="label">TechxMoney Uploader</span>
+    <h1>TikTok Authorization</h1>
+    <p class="lead">This page is the authorization callback for TechxMoney Uploader.</p>
+    <div id="success" hidden>
+      <p><b>Authorization succeeded.</b> TikTok redirected you here with an authorization code. Copy the code below and paste it into the TechxMoney Uploader setup step. The code is single-use and expires quickly, so copy it now.</p>
+      <div class="codebox" id="codeBox"></div>
+      <p><button type="button" id="copyBtn">Copy code</button></p>
+      <p class="meta" id="stateLine"></p>
+    </div>
+    <div id="errorBox" hidden>
+      <p><b>Authorization did not complete.</b></p>
+      <div class="codebox" id="errorText"></div>
+      <p>Please go back and try authorizing again. If the problem continues, contact us through the TechxMoney blog linked below.</p>
+    </div>
+    <div id="infoBox">
+      <p>If you opened this page directly, there is nothing to do here. When you connect your TikTok account from TechxMoney Uploader, TikTok will send you back to this page after you approve access.</p>
+      <p>This page does not ask for your TikTok password and does not store your authorization code. The code shown here is only displayed in your browser so you can copy it into the setup step.</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Links</h2>
+    <nav>
+      <a href="./">TechxMoney Uploader</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="https://blog.naver.com/yeonwoomyung">TechxMoney blog</a>
+    </nav>
+    <p class="meta">Questions: please contact us through the TechxMoney blog linked above. Last updated: 1 November 2026.</p>
+  </section>
+
+  <footer>© 2026 TechxMoney — TechxMoney Uploader</footer>
+</main>
+<script>
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  var code = params.get("code");
+  var error = params.get("error");
+  var errorDesc = params.get("error_description");
+  var state = params.get("state");
+  var success = document.getElementById("success");
+  var errorBox = document.getElementById("errorBox");
+  var infoBox = document.getElementById("infoBox");
+  if (code) {
+    infoBox.hidden = true;
+    success.hidden = false;
+    document.getElementById("codeBox").textContent = code;
+    if (state) document.getElementById("stateLine").textContent = "State: " + state;
+    var btn = document.getElementById("copyBtn");
+    btn.addEventListener("click", function () {
+      var done = function () { btn.textContent = "Copied"; };
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(code).then(done, function () { btn.textContent = "Copy failed — select the code above"; });
+      } else {
+        btn.textContent = "Select the code above to copy";
+      }
+    });
+  } else if (error) {
+    infoBox.hidden = true;
+    errorBox.hidden = false;
+    document.getElementById("errorText").textContent = error + (errorDesc ? ": " + errorDesc : "");
+  }
+})();
+</script>
+</body>
+</html>
