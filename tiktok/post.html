@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>TechxMoney Uploader — Post to TikTok (Demo)</title>
+<meta name="description" content="Demo posting page for TechxMoney Uploader. Connect TikTok, prepare a vertical video, and generate the uploader command for Direct Post or draft." />
+<style>
+  :root { --bg:#f4f6f8; --surface:#fff; --ink:#141a21; --ink2:#4b5764; --ink3:#8494a3; --line:#dde3e9; --accent:#0b5e4b; --accent-soft:#e3f0ec; --gold:#b07d1e; --radius:18px; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Malgun Gothic",sans-serif; line-height:1.6; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:640px; margin:0 auto; padding:28px 18px 48px; }
+  .card { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:26px 22px; margin-bottom:16px; }
+  .label { display:inline-block; font-size:13px; font-weight:700; color:var(--accent); background:var(--accent-soft); border-radius:999px; padding:5px 11px; margin-bottom:14px; }
+  h1 { font-size:26px; line-height:1.3; margin:0 0 10px; letter-spacing:-.01em; }
+  h2 { font-size:19px; margin:0 0 8px; }
+  p { margin:0 0 12px; font-size:16px; color:var(--ink); }
+  p.lead { font-size:17px; color:var(--ink2); }
+  ol, ul { margin:0 0 12px; padding-left:22px; font-size:16px; }
+  li { margin-bottom:8px; }
+  a { color:var(--accent); }
+  .note { background:#fdf6e3; border:1px solid #e8d9a8; border-radius:12px; padding:14px 15px; font-size:15px; margin:0 0 12px; }
+  .note b { font-weight:700; }
+  .step { display:inline-block; font-size:13px; font-weight:700; color:#fff; background:var(--accent); border-radius:999px; padding:5px 11px; margin-bottom:14px; }
+  label.field { display:block; font-size:15px; font-weight:700; margin:14px 0 6px; }
+  label.field small { display:block; font-weight:400; color:var(--ink2); font-size:14px; margin-top:2px; }
+  input[type="text"], select, textarea { width:100%; font:inherit; font-size:16px; color:var(--ink); background:#fff; border:1px solid var(--line); border-radius:12px; padding:12px 14px; }
+  textarea { min-height:110px; resize:vertical; }
+  textarea.cmd { font-family:ui-monospace,Menlo,Consolas,monospace; font-size:14px; min-height:120px; background:#f4f6f8; word-break:break-all; overflow-wrap:anywhere; }
+  input[type="file"] { width:100%; font:inherit; font-size:15px; }
+  .check { display:flex; align-items:flex-start; gap:10px; font-size:16px; margin:10px 0; }
+  .check input { width:20px; height:20px; margin-top:3px; flex:none; accent-color:var(--accent); }
+  .check small { display:block; color:var(--ink2); font-size:14px; }
+  .row { display:flex; gap:10px; flex-wrap:wrap; }
+  button { font:inherit; font-size:16px; font-weight:700; color:#fff; background:var(--accent); border:1px solid transparent; border-radius:12px; padding:12px 18px; cursor:pointer; }
+  button:active { transform:scale(0.98); }
+  button.secondary { color:var(--accent); background:#fff; border-color:var(--accent); }
+  button:disabled { opacity:.5; cursor:default; }
+  .count { font-size:14px; color:var(--ink3); text-align:right; margin-top:4px; }
+  .count.over { color:#b3261e; font-weight:700; }
+  .codebox { background:#f4f6f8; border:1px solid var(--line); border-radius:12px; padding:14px 15px; font-family:ui-monospace,Menlo,Consolas,monospace; font-size:14px; word-break:break-all; overflow-wrap:anywhere; margin:0 0 12px; }
+  nav { font-size:15px; }
+  nav a { margin-right:16px; }
+  footer { font-size:14px; color:var(--ink3); }
+  .meta { font-size:14px; color:var(--ink3); }
+  [hidden] { display:none !important; }
+</style>
+</head>
+<body>
+<main class="wrap">
+  <section class="card">
+    <span class="label">TechxMoney Uploader</span>
+    <h1>Post to TikTok</h1>
+    <p class="lead">Demo posting page for the Content Posting API audit. Connect your TikTok account, prepare a vertical video, then run the generated command on your own computer to publish it or save it as a draft.</p>
+    <div class="note"><b>Sandbox:</b> until TikTok&rsquo;s Content Posting audit is passed, videos published through the API stay private (SELF_ONLY) even if another privacy level is chosen. Drafts are never published by this tool — the creator finishes them in the TikTok app.</div>
+    <p>This tool does not schedule posts. TikTok posts immediately (Direct Post) or saves as a draft only.</p>
+  </section>
+
+  <section class="card">
+    <span class="step">1. Connect TikTok</span>
+    <h2>Connect your TikTok account</h2>
+    <p>Enter your <b>Sandbox Client key</b> (TikTok developer portal &rarr; your Sandbox app &rarr; Credentials, eye icon). The key is stored only in this browser. Your Client secret is never entered here.</p>
+    <label class="field" for="clientKey">Client key
+      <small>From the Sandbox app credentials. Saved in this browser only.</small>
+    </label>
+    <input type="text" id="clientKey" placeholder="Paste your Sandbox Client key" autocomplete="off" autocapitalize="off" spellcheck="false" />
+    <p style="margin-top:14px;"><button type="button" id="connectBtn">Connect with TikTok</button></p>
+    <div id="authUrlBox" hidden>
+      <p class="meta">Authorization URL opened in a new tab:</p>
+      <div class="codebox" id="authUrl"></div>
+    </div>
+    <p>After you approve on TikTok, you are sent back to the callback page, which shows your <b>authorization code</b>. Copy that code — you will paste it into the uploader command in step 3. The code is single-use and expires quickly.</p>
+    <p class="meta">Scopes requested: user.info.basic, video.publish, video.upload</p>
+  </section>
+
+  <section class="card">
+    <span class="step">2. Video</span>
+    <h2>Prepare your video</h2>
+    <label class="field" for="videoFile">Video file
+      <small>Vertical MP4 (1080&times;1920), up to 10 minutes. The file itself is not uploaded from this page — its name is used to build the command in step 3.</small>
+    </label>
+    <input type="file" id="videoFile" accept="video/*" />
+    <p class="meta" id="fileInfo">No video selected.</p>
+
+    <label class="field" for="caption">Caption
+      <small>Hashtags (#) and mentions (@) are matched by TikTok. Maximum 2200 characters.</small>
+    </label>
+    <textarea id="caption" maxlength="3000" placeholder="Write your caption, e.g. AI chip news in 60 seconds #AI #semiconductor"></textarea>
+    <div class="count" id="captionCount">0 / 2200 characters</div>
+
+    <label class="field" for="privacy">Privacy
+      <small>Sandbox: posts stay private until the audit passes, whichever level you pick.</small>
+    </label>
+    <select id="privacy">
+      <option value="SELF_ONLY" selected>SELF_ONLY — Only me (private)</option>
+      <option value="PUBLIC_TO_EVERYONE">PUBLIC_TO_EVERYONE — Everyone</option>
+      <option value="MUTUAL_FOLLOW_FRIENDS">MUTUAL_FOLLOW_FRIENDS — Friends</option>
+      <option value="FOLLOWER_OF_CREATOR">FOLLOWER_OF_CREATOR — Followers</option>
+    </select>
+
+    <label class="field">Interactions</label>
+    <label class="check"><input type="checkbox" id="allowComment" checked /><span>Allow comments<small>Uncheck to disable comments on this post.</small></span></label>
+    <label class="check"><input type="checkbox" id="allowDuet" checked /><span>Allow duet<small>Uncheck to disable duets on this post.</small></span></label>
+    <label class="check"><input type="checkbox" id="allowStitch" checked /><span>Allow stitch<small>Uncheck to disable stitches on this post.</small></span></label>
+
+    <label class="field">Commercial content</label>
+    <label class="check"><input type="checkbox" id="brandContent" /><span>This is branded content<small>Paid partnership to promote a third-party business.</small></span></label>
+    <label class="check"><input type="checkbox" id="brandOrganic" /><span>This is my own brand<small>This video promotes the creator&rsquo;s own business.</small></span></label>
+  </section>
+
+  <section class="card">
+    <span class="step">3. Post</span>
+    <h2>Generate the uploader command</h2>
+    <p>Pick a video file above first. Then choose how to send it. The command runs <b>on your own computer</b>, in the folder where <span class="meta">tiktok_demo.py</span> and the video file are.</p>
+    <div class="row" style="margin-bottom:14px;">
+      <button type="button" id="directBtn">Direct Post</button>
+      <button type="button" id="draftBtn" class="secondary">Save as Draft</button>
+    </div>
+    <div id="cmdBox" hidden>
+      <label class="field" for="cmdOut">Your command</label>
+      <textarea id="cmdOut" class="cmd" readonly></textarea>
+      <p><button type="button" id="copyCmdBtn">Copy command</button></p>
+      <div class="note" id="cmdNote"></div>
+    </div>
+    <p class="meta">Run order: (1) connect above and copy the authorization code from the callback page, (2) <span style="font-family:ui-monospace,Menlo,Consolas,monospace;">python3 tiktok_demo.py token &lt;code&gt;</span>, (3) <span style="font-family:ui-monospace,Menlo,Consolas,monospace;">python3 tiktok_demo.py creator</span>, (4) paste the command from this page. Full instructions are in the README that comes with tiktok_demo.py.</p>
+  </section>
+
+  <section class="card">
+    <h2>Links</h2>
+    <nav>
+      <a href="./">TechxMoney Uploader</a>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="https://blog.naver.com/yeonwoomyung">TechxMoney blog</a>
+    </nav>
+    <p class="meta">Demo / sandbox tool for the Content Posting API audit. Posts are private until the audit passes. Last updated: 1 November 2026.</p>
+  </section>
+
+  <footer>© 2026 TechxMoney — TechxMoney Uploader</footer>
+</main>
+<script>
+(function () {
+  var REDIRECT_URI = "https://hottory.github.io/invest-schedule-share/tiktok/callback.html";
+  var SCOPES = "user.info.basic,video.publish,video.upload";
+  var MAX_CAPTION = 2200;
+
+  var keyInput = document.getElementById("clientKey");
+  var connectBtn = document.getElementById("connectBtn");
+  var authUrlBox = document.getElementById("authUrlBox");
+  var authUrl = document.getElementById("authUrl");
+  var videoFile = document.getElementById("videoFile");
+  var fileInfo = document.getElementById("fileInfo");
+  var caption = document.getElementById("caption");
+  var captionCount = document.getElementById("captionCount");
+  var privacy = document.getElementById("privacy");
+  var directBtn = document.getElementById("directBtn");
+  var draftBtn = document.getElementById("draftBtn");
+  var cmdBox = document.getElementById("cmdBox");
+  var cmdOut = document.getElementById("cmdOut");
+  var cmdNote = document.getElementById("cmdNote");
+  var copyCmdBtn = document.getElementById("copyCmdBtn");
+
+  // Client key: stored in this browser only, never sent anywhere by this page.
+  try {
+    var savedKey = window.localStorage.getItem("tiktok_client_key");
+    if (savedKey) keyInput.value = savedKey;
+  } catch (e) {}
+  keyInput.addEventListener("input", function () {
+    try { window.localStorage.setItem("tiktok_client_key", keyInput.value.trim()); } catch (e) {}
+  });
+
+  function randomState() {
+    var bytes = new Uint8Array(16);
+    if (window.crypto && window.crypto.getRandomValues) {
+      window.crypto.getRandomValues(bytes);
+    } else {
+      for (var i = 0; i < bytes.length; i++) bytes[i] = Math.floor(Math.random() * 256);
+    }
+    var out = "";
+    for (var j = 0; j < bytes.length; j++) out += ("0" + bytes[j].toString(16)).slice(-2);
+    return out;
+  }
+
+  connectBtn.addEventListener("click", function () {
+    var key = keyInput.value.trim();
+    if (!key) {
+      alert("Enter your Sandbox Client key first.");
+      keyInput.focus();
+      return;
+    }
+    var state = randomState();
+    try { window.localStorage.setItem("tiktok_oauth_state", state); } catch (e) {}
+    var params = new URLSearchParams({
+      client_key: key,
+      scope: SCOPES,
+      response_type: "code",
+      redirect_uri: REDIRECT_URI,
+      state: state
+    });
+    var url = "https://www.tiktok.com/v2/auth/authorize/?" + params.toString();
+    authUrl.textContent = url;
+    authUrlBox.hidden = false;
+    window.open(url, "_blank");
+  });
+
+  videoFile.addEventListener("change", function () {
+    var f = videoFile.files && videoFile.files[0];
+    if (!f) { fileInfo.textContent = "No video selected."; return; }
+    var mb = (f.size / 1024 / 1024).toFixed(2);
+    fileInfo.textContent = "Selected: " + f.name + " (" + mb + " MB, " + (f.type || "video") + ")";
+  });
+
+  function updateCount() {
+    var n = caption.value.length;
+    captionCount.textContent = n + " / " + MAX_CAPTION + " characters";
+    captionCount.classList.toggle("over", n > MAX_CAPTION);
+  }
+  caption.addEventListener("input", updateCount);
+  updateCount();
+
+  function shellQuote(s) {
+    return '"' + String(s).replace(/\\/g, "\\\\").replace(/"/g, '\\"') + '"';
+  }
+
+  function selectedVideoName() {
+    var f = videoFile.files && videoFile.files[0];
+    return f ? f.name : null;
+  }
+
+  function buildCommand(mode) {
+    var name = selectedVideoName();
+    if (!name) { alert("Choose a video file first (section 2)."); videoFile.focus(); return null; }
+    var cap = caption.value.trim();
+    if (cap.length > MAX_CAPTION) { alert("Caption is over 2200 characters. Shorten it first."); caption.focus(); return null; }
+    var parts = ["python3", "tiktok_demo.py", "upload", "--video", shellQuote(name), "--mode", mode];
+    if (mode === "direct") {
+      if (cap) { parts.push("--title", shellQuote(cap)); }
+      parts.push("--privacy", privacy.value);
+      if (!document.getElementById("allowComment").checked) parts.push("--disable-comment");
+      if (!document.getElementById("allowDuet").checked) parts.push("--disable-duet");
+      if (!document.getElementById("allowStitch").checked) parts.push("--disable-stitch");
+      if (document.getElementById("brandContent").checked) parts.push("--brand-content");
+      if (document.getElementById("brandOrganic").checked) parts.push("--brand-organic");
+    }
+    return parts.join(" ");
+  }
+
+  function showCommand(mode) {
+    var cmd = buildCommand(mode);
+    if (!cmd) return;
+    cmdOut.value = cmd;
+    cmdBox.hidden = false;
+    copyCmdBtn.textContent = "Copy command";
+    if (mode === "direct") {
+      cmdNote.innerHTML = "<b>Direct Post:</b> publishes the video to the connected TikTok account right away. In the sandbox it stays private (SELF_ONLY) until the audit passes. Run this in the folder where tiktok_demo.py and the video file are — if the video is elsewhere, replace the file name with its full path.";
+    } else {
+      cmdNote.innerHTML = "<b>Save as Draft:</b> sends the video to the creator&rsquo;s TikTok inbox as a draft. The caption and privacy are finished in the TikTok app — the creator taps the inbox notification and completes the post there. (The Upload API takes no caption or privacy; that is why the draft command carries only the video.)";
+    }
+    cmdOut.focus();
+    cmdOut.select();
+  }
+
+  directBtn.addEventListener("click", function () { showCommand("direct"); });
+  draftBtn.addEventListener("click", function () { showCommand("draft"); });
+
+  copyCmdBtn.addEventListener("click", function () {
+    var done = function () { copyCmdBtn.textContent = "Copied"; };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(cmdOut.value).then(done, function () {
+        copyCmdBtn.textContent = "Copy failed — select the command above";
+      });
+    } else {
+      cmdOut.select();
+      try { document.execCommand("copy"); done(); }
+      catch (e) { copyCmdBtn.textContent = "Select the command above to copy"; }
+    }
+  });
+})();
+</script>
+</body>
+</html>
