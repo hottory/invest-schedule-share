@@ -1,147 +1,8 @@
 [
  {
   "title": "최근 7일",
-  "range": "10.29~11.04",
+  "range": "10.30~11.05",
   "days": [
-   {
-    "date": "10.29",
-    "wd": "목요일",
-    "items": [
-     {
-      "chip": "매크로 지표",
-      "cls": "tag-macro",
-      "star": false,
-      "title": "한국은행 10월 기업경기조사·ESI(시각 미확정)",
-      "result": "10월 전산업 기업심리지수(CBSI) 104.2로 전월비 5.1p 상승, 2022년 8월 이후 최고."
-     },
-     {
-      "chip": "금리 결정",
-      "cls": "tag-rate",
-      "star": true,
-      "title": "FOMC 10월 금리 결정·성명",
-      "result": "기준금리 3.75~4.00% 동결(10-2, 쿡·해맥 인상 소수 의견)."
-     },
-     {
-      "chip": "금리 결정",
-      "cls": "tag-rate",
-      "star": true,
-      "title": "FOMC 의장(Warsh) 기자회견",
-      "result": "워시 의장: 인플레가 6년 가까이 목표를 상회, 물가 안정이 최우선."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": true,
-      "title": "Alphabet 3Q 실적(미국 장후)",
-      "result": "3Q 매출 1,275.8억 달러(약 170조8천억원, 전년비 25% 증가)로 컨센서스 소폭 하회."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": false,
-      "title": "Ford Motor 3Q 실적 (장후)",
-      "result": "3Q 매출 495.3억 달러(약 66조3천억원, 전년비 2% 감소), 순이익 20.5억 달러, 조정 EPS 0.49달러로 컨센서스 상회."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": false,
-      "title": "KLA FY27 1Q 실적(미국 장후)",
-      "result": "FY27 1Q 매출 41.4억 달러(약 5조5천억원, 전년비 28.9% 증가), 비GAAP EPS 1.22달러로 컨센서스 상회."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": true,
-      "title": "Microsoft FY27 1Q 실적(미국 장후)",
-      "result": "FY27 1Q 매출 923억 달러(약 123조6천억원, 전년비 19% 증가), 조정 EPS 4.89달러로 컨센서스 상회."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": false,
-      "title": "삼성SDI 3Q 실적",
-      "result": "3Q 매출 4조6,856억원(전년비 52.6% 증가), 영업이익 4,078억원으로 흑자 전환, 12분기 만에 최대."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": true,
-      "title": "삼성전자 3Q 확정실적",
-      "result": "3Q 확정 매출 195조2,532억원, 영업이익 107조4,405억원으로 잠정 유지, 4분기 연속 역대 최대."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": false,
-      "title": "SK이노베이션 3Q 실적",
-      "result": "3Q 매출 28조7,738억원, 영업이익 3조7,043억원으로 역대 최대."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": false,
-      "title": "한화에어로스페이스 3Q 실적",
-      "result": "3Q 매출 6조943억원(전년비 6.0% 감소), 영업이익 4,520억원(46.2% 감소), 당기순손실 367억원으로 적자 전환."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": false,
-      "title": "Eli Lilly 3Q 실적(미국 장전, 예정)",
-      "result": "3Q 매출 244억 달러(약 32조7천억원, 전년비 39% 증가), 조정 EPS 7.48달러로 컨센서스 상회."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": false,
-      "title": "Mastercard 3Q 실적(미국 장전, 예정)",
-      "result": "3Q 매출 98.1억 달러(약 13조1천억원, 전년비 14% 증가), 조정 EPS 5.31달러로 컨센서스 상회."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": false,
-      "title": "Merck 3Q 실적(미국 장전)",
-      "result": "3Q 매출 180.9억 달러(약 24조2천억원, 전년비 5% 증가), 조정 EPS 2.49달러로 컨센서스 상회."
-     },
-     {
-      "chip": "매크로 지표",
-      "cls": "tag-macro",
-      "star": false,
-      "title": "미국 3분기 GDP 속보치",
-      "result": "3분기 GDP 속보치 연율 3.4%(2분기 2.2%, 전망 3.1~3.2% 상회)."
-     },
-     {
-      "chip": "매크로 지표",
-      "cls": "tag-macro",
-      "star": true,
-      "title": "미국 9월 PCE 물가지수·개인소득/소비지출",
-      "result": "9월 PCE 전년 대비 3.6%(전월 3.4%), 전월비 0.5%."
-     },
-     {
-      "chip": "매크로 지표",
-      "cls": "tag-macro",
-      "star": false,
-      "title": "미국 주간 신규 실업수당 청구건수",
-      "result": "주간 신규 실업수당 청구 19만4천건(전주 19만5천건, 전망 19만9천건 하회)."
-     },
-     {
-      "chip": "금리 결정",
-      "cls": "tag-rate",
-      "star": true,
-      "title": "ECB 통화정책회의 금리 결정",
-      "result": "수신금리 2.50%·리파이낸싱 2.65%·한계대출 2.90% 전원일치 동결."
-     },
-     {
-      "chip": "금리 결정",
-      "cls": "tag-rate",
-      "star": true,
-      "title": "ECB Lagarde 총재 기자회견",
-      "result": "라가르드 총재: 금리 인상 논의했으나 동결로 만장일치 합의."
-     }
-    ]
-   },
    {
     "date": "10.30",
     "wd": "금요일",
@@ -311,110 +172,68 @@
       "result": "매출 3,021억원(+26.7%), 영업이익 325억원(+105.4%, 분기 최대), 순이익 329억원(+71.7%)."
      }
     ]
+   },
+   {
+    "date": "11.04",
+    "wd": "수요일",
+    "items": [
+     {
+      "chip": "주요 이벤트·발언",
+      "cls": "tag-event",
+      "star": false,
+      "title": "미국 JOLTS 구인·이직 보고서(9월)",
+      "result": "구인건수 752만 건(전망 약 710만 상회, 8월 719만 건으로 상향 수정)."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": true,
+      "title": "AMD 3Q 실적(미국 장후)",
+      "result": "매출 133.8억 달러(약 17.9조원, 1달러=1,341원 기준, 전년비 +45%)·조정 EPS 2.09달러로 컨센서스(약 131억 달러·1.94~1.95달러) 상회."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "카카오뱅크 3Q 잠정실적",
+      "result": "3Q 순이익 1,417억원(전년비 +27.2%), 1~3분기 누적 4,698억원(+25.2%, 누적 기준 역대 최대)."
+     },
+     {
+      "chip": "매크로 지표",
+      "cls": "tag-macro",
+      "star": true,
+      "title": "유로존 10월 CPI(예비치)",
+      "result": "10월 CPI 전년비 +4.0%(9월 3.8%, 전망 3.9~4.0% 부합), 2023년 9월 이후 3년 만에 최고."
+     },
+     {
+      "chip": "매크로 지표",
+      "cls": "tag-macro",
+      "star": true,
+      "title": "ADP 민간고용보고서(10월)",
+      "result": "10월 민간고용 +8.6만 명으로 전망(6.9만~7.5만 명) 상회, 9월치 9.0만→8.6만 명으로 하향 수정."
+     },
+     {
+      "chip": "매크로 지표",
+      "cls": "tag-macro",
+      "star": false,
+      "title": "미국 9월 무역수지",
+      "result": "9월 무역적자 1,050억 달러(약 141조원, 1달러=1,341원 기준, 전망 1,080억 달러보다 축소)."
+     },
+     {
+      "chip": "주요 이벤트·발언",
+      "cls": "tag-event",
+      "star": false,
+      "title": "미국 재무부 분기 리펀딩 발표",
+      "result": "분기 리펀딩 1,250억 달러(3년물 580억·10년물 420억·30년물 250억 달러)로 규모 동결."
+     }
+    ]
    }
   ]
  },
  {
   "title": "이전 7일",
-  "range": "10.22~10.28",
+  "range": "10.23~10.29",
   "days": [
-   {
-    "date": "10.22",
-    "wd": "목요일",
-    "items": [
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": false,
-      "title": "Blackstone 3분기 실적(미국 장전)",
-      "result": "매출 $3.06B(약 4,058억원, 1달러=1,326원 기준, 예상 ~$3.2B 하회)·배분가능 EPS $1.32(컨센서스 $1.30/$1.26, 출처별 상이)."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": false,
-      "title": "Ford 3분기 실적(미국 장후, 예정)",
-      "result": "10/22 미발표 — Ford Q3 2026 실적 실제 발표일은 10/28(수) 장후로 확인(MarketBeat·Zacks·DefenseWorld·TradingNews 일치)."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": false,
-      "title": "Procter & Gamble 3분기 실적(미국 장전)",
-      "result": "순매출 $23.28B(약 30.9조원, 1달러=1,326원 기준, +4% YoY, 예상 $22.82B 상회)·코어 EPS $2.00(컨센서스 $1.89 상회, 회계연도 Q1 2027)."
-     },
-     {
-      "chip": "금리 결정",
-      "cls": "tag-rate",
-      "star": true,
-      "title": "한국은행 금통위(통화정책방향)",
-      "result": "기준금리 연 3.00% 동결(금통위원 7명 전원일치, 7·8월 연속 인상 후 첫 동결)."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": false,
-      "title": "IBM 3분기 실적(미국 장후)",
-      "result": "매출 $17.1B(약 22.7조원, 1달러=1,326원 기준, +5% YoY, 컨센서스 $16.84B 상회)·조정 EPS $2.95(컨센서스 $2.87 상회), GAAP EPS $2.30(컨센서스 $2.45 하회)."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": false,
-      "title": "Lam Research 3분기 실적(미국 장후)",
-      "result": "매출 $8.219B(약 10.9조원, 1달러=1,326원 기준, +54.4% YoY, 컨센서스 $8.18B 소폭 상회)·조정 EPS $2.20(컨센서스 $2.18 상회), 사상 최대 분기 실적."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": true,
-      "title": "META 3Q 실적(미국 장후)",
-      "result": "매출 $64.6B(약 86조원, 1달러=1,326원 기준, +26% YoY, 컨센서스 상회)·GAAP EPS $3.83(52개주 소송 합의 일회성 비용 $9.89B 반영, 제외 시 $7.40)."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": true,
-      "title": "Tesla 3분기 실적(미국 장후)",
-      "result": "매출 $28.05B(약 37조원, 1달러=1,326원 기준, 컨센서스 $27.78B 상회·Zacks)·조정 EPS $0.48(컨센서스 $0.45 상회)."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": false,
-      "title": "삼성E&A·LG디스플레이 3Q 실적",
-      "result": "삼성E&A: 매출 2조9,103억원(+45.8% YoY)·영업이익 5,006억원(+183.6%)·순이익 2,167억원(+37.7%, 연합인포맥스 컨센서스 2,064억원 상회)."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": false,
-      "title": "Honeywell 3Q 실적(미국 장전, 예정)",
-      "result": "매출 $5.0B(약 6,630억원, 1달러=1,326원 기준, +1% 보고 기준·+7% 유기적, 예상 $5.01B 소폭 하회)·조정 EPS $2.27(컨센서스 $2.17 상회, +34% YoY)."
-     },
-     {
-      "chip": "실적 발표",
-      "cls": "tag-earnings",
-      "star": false,
-      "title": "Lockheed Martin 3Q 실적(미국 장전)",
-      "result": "매출 $20.71B(약 27.5조원, 1달러=1,326원 기준, +11.3% YoY, 컨센서스 $20.43B 상회)·EPS $7.97(컨센서스 $7.49 상회, +14.7% YoY)."
-     },
-     {
-      "chip": "매크로 지표",
-      "cls": "tag-macro",
-      "star": false,
-      "title": "미국 주간 신규 실업수당 청구건수",
-      "result": "10/17주 신규 청구 194,000건(전주 대비 -6,000건, 컨센서스 200,000건 하회)."
-     },
-     {
-      "chip": "매크로 지표",
-      "cls": "tag-macro",
-      "star": false,
-      "title": "미국 경기선행지수(9월, 예정)",
-      "result": "9월 LEI 99.6(2016=100), 전월 대비 변동 없음(컨센서스 -0.2% 대비 소폭 상회), 8월 -0.1%."
-     }
-    ]
-   },
    {
     "date": "10.23",
     "wd": "금요일",
@@ -590,6 +409,145 @@
       "star": false,
       "title": "미국 도매재고(9월 예비치)",
       "result": "9월 도매재고 전월 대비 0.6% 증가(예상 0.5% 상회), 잔액 1조 11.5억 달러(약 1,358조원, 1달러=1,343원 기준)로 8개월 연속 증가."
+     }
+    ]
+   },
+   {
+    "date": "10.29",
+    "wd": "목요일",
+    "items": [
+     {
+      "chip": "매크로 지표",
+      "cls": "tag-macro",
+      "star": false,
+      "title": "한국은행 10월 기업경기조사·ESI(시각 미확정)",
+      "result": "10월 전산업 기업심리지수(CBSI) 104.2로 전월비 5.1p 상승, 2022년 8월 이후 최고."
+     },
+     {
+      "chip": "금리 결정",
+      "cls": "tag-rate",
+      "star": true,
+      "title": "FOMC 10월 금리 결정·성명",
+      "result": "기준금리 3.75~4.00% 동결(10-2, 쿡·해맥 인상 소수 의견)."
+     },
+     {
+      "chip": "금리 결정",
+      "cls": "tag-rate",
+      "star": true,
+      "title": "FOMC 의장(Warsh) 기자회견",
+      "result": "워시 의장: 인플레가 6년 가까이 목표를 상회, 물가 안정이 최우선."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": true,
+      "title": "Alphabet 3Q 실적(미국 장후)",
+      "result": "3Q 매출 1,275.8억 달러(약 170조8천억원, 전년비 25% 증가)로 컨센서스 소폭 하회."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "Ford Motor 3Q 실적 (장후)",
+      "result": "3Q 매출 495.3억 달러(약 66조3천억원, 전년비 2% 감소), 순이익 20.5억 달러, 조정 EPS 0.49달러로 컨센서스 상회."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "KLA FY27 1Q 실적(미국 장후)",
+      "result": "FY27 1Q 매출 41.4억 달러(약 5조5천억원, 전년비 28.9% 증가), 비GAAP EPS 1.22달러로 컨센서스 상회."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": true,
+      "title": "Microsoft FY27 1Q 실적(미국 장후)",
+      "result": "FY27 1Q 매출 923억 달러(약 123조6천억원, 전년비 19% 증가), 조정 EPS 4.89달러로 컨센서스 상회."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "삼성SDI 3Q 실적",
+      "result": "3Q 매출 4조6,856억원(전년비 52.6% 증가), 영업이익 4,078억원으로 흑자 전환, 12분기 만에 최대."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": true,
+      "title": "삼성전자 3Q 확정실적",
+      "result": "3Q 확정 매출 195조2,532억원, 영업이익 107조4,405억원으로 잠정 유지, 4분기 연속 역대 최대."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "SK이노베이션 3Q 실적",
+      "result": "3Q 매출 28조7,738억원, 영업이익 3조7,043억원으로 역대 최대."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "한화에어로스페이스 3Q 실적",
+      "result": "3Q 매출 6조943억원(전년비 6.0% 감소), 영업이익 4,520억원(46.2% 감소), 당기순손실 367억원으로 적자 전환."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "Eli Lilly 3Q 실적(미국 장전, 예정)",
+      "result": "3Q 매출 244억 달러(약 32조7천억원, 전년비 39% 증가), 조정 EPS 7.48달러로 컨센서스 상회."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "Mastercard 3Q 실적(미국 장전, 예정)",
+      "result": "3Q 매출 98.1억 달러(약 13조1천억원, 전년비 14% 증가), 조정 EPS 5.31달러로 컨센서스 상회."
+     },
+     {
+      "chip": "실적 발표",
+      "cls": "tag-earnings",
+      "star": false,
+      "title": "Merck 3Q 실적(미국 장전)",
+      "result": "3Q 매출 180.9억 달러(약 24조2천억원, 전년비 5% 증가), 조정 EPS 2.49달러로 컨센서스 상회."
+     },
+     {
+      "chip": "매크로 지표",
+      "cls": "tag-macro",
+      "star": false,
+      "title": "미국 3분기 GDP 속보치",
+      "result": "3분기 GDP 속보치 연율 3.4%(2분기 2.2%, 전망 3.1~3.2% 상회)."
+     },
+     {
+      "chip": "매크로 지표",
+      "cls": "tag-macro",
+      "star": true,
+      "title": "미국 9월 PCE 물가지수·개인소득/소비지출",
+      "result": "9월 PCE 전년 대비 3.6%(전월 3.4%), 전월비 0.5%."
+     },
+     {
+      "chip": "매크로 지표",
+      "cls": "tag-macro",
+      "star": false,
+      "title": "미국 주간 신규 실업수당 청구건수",
+      "result": "주간 신규 실업수당 청구 19만4천건(전주 19만5천건, 전망 19만9천건 하회)."
+     },
+     {
+      "chip": "금리 결정",
+      "cls": "tag-rate",
+      "star": true,
+      "title": "ECB 통화정책회의 금리 결정",
+      "result": "수신금리 2.50%·리파이낸싱 2.65%·한계대출 2.90% 전원일치 동결."
+     },
+     {
+      "chip": "금리 결정",
+      "cls": "tag-rate",
+      "star": true,
+      "title": "ECB Lagarde 총재 기자회견",
+      "result": "라가르드 총재: 금리 인상 논의했으나 동결로 만장일치 합의."
      }
     ]
    }
