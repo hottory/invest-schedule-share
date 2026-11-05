@@ -5,1299 +5,8 @@ CALSCALE:GREGORIAN
 METHOD:PUBLISH
 X-WR-CALNAME:투자 일정
 BEGIN:VEVENT
-UID:b95ee08601359251167e@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;VALUE=DATE:20261019
-DTEND;VALUE=DATE:20261031
-SUMMARY:2026년도 국정감사(잔여 일정)
-DESCRIPTION:📌 관전 포인트\n14개 상임위 감사는 10/27 종료\,
-  정보위(10/28~30)·운영위(10/29~30)까지 10/30 전체 종료. AI·
- 반도체·금융 관련 기관 증언에서 나오는 정책 신호. [결
- 과 2026-10-19](진행 중) 기노위 국감에서 여야가 호남 반도
- 체 클러스터(약 896조원 사업) 증인 채택을 놓고 충돌 — 
- 국민의힘 이재용·최태원 회장 등 증인 요구 vs 민주당 
- 정부·공기업 상대 검증론으로 반발. 10/26 종합감사 앞 
- 출석요구서 7일 전 송달 시한이 이날까지라 협상 시한 
- 주목(이투데이·프레시안·아주경제 공통 확인)\n\n🔗 이
-  일정 공유하기: https://hottory.github.io/invest-schedule-share/?id=
- 1019-01
-END:VEVENT
-BEGIN:VEVENT
-UID:573d2d5a1b99cfd89138@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;VALUE=DATE:20261026
-DTEND;VALUE=DATE:20261029
-SUMMARY:Oracle AI World 2026 (구 CloudWorld)
-DESCRIPTION:📌 관전 포인트\nOracle 공식 FAQ 기준 10/25~28(현지
- 시간) 라스베이거스 The Venetian 개최\, 키노트는 10/26~28. 
- 구 CloudWorld의 후신인 Oracle 최대 연례 행사. OCI·AI 에이전
- 트·데이터베이스 신제품 발표와 경영진 키노트가 관전 
- 포인트.\n\n🔗 이 일정 공유하기: https://hottory.github.io/inve
- st-schedule-share/?id=1026-02
-END:VEVENT
-BEGIN:VEVENT
-UID:ea3b3bf24c07a5b1bb6d@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261026T233000
-DTEND;TZID=Asia/Seoul:20261027T000000
-SUMMARY:미국 댈러스 연은 제조업 서베이(10월)
-DESCRIPTION:📌 관전 포인트\n텍사스 제조업 동향. 지역 연
- 은 지표 중 FOMC 전 마지막 단서. (10:30 ET 발표)\n\n🔗 이 
- 일정 공유하기: https://hottory.github.io/invest-schedule-share/?id=1
- 026-01
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:78c8154428fa09a61201@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;VALUE=DATE:20261027
-DTEND;VALUE=DATE:20261028
-SUMMARY:미국 댈러스 연은 서비스업 서베이(10월\, 시각 미
- 확정)
-DESCRIPTION:📌 관전 포인트\n발표일 10/27 확정(Dallas Fed 공식
- )\, 발표 시각 미확인. 텍사스 서비스업 체감. 통상 10:30 E
- T 관행이나 미확정 표기.\n\n🔗 이 일정 공유하기: https://
- hottory.github.io/invest-schedule-share/?id=1027-01
-END:VEVENT
-BEGIN:VEVENT
-UID:7c48ef79a32a282e1355@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261027T140000
-DTEND;TZID=Asia/Seoul:20261027T143000
-SUMMARY:한화오션 3Q 실적
-DESCRIPTION:📌 관전 포인트\n한국 장중 컨콜. 조선·방산 수
- 주잔고가 관전 포인트.\n\n🔗 이 일정 공유하기: https://ho
- ttory.github.io/invest-schedule-share/?id=1027-02
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:934abfc6dd8d9828dc30@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261027T153000
-DTEND;TZID=Asia/Seoul:20261027T160000
-SUMMARY:한화시스템 3Q 실적
-DESCRIPTION:📌 관전 포인트\n한국 장중 컨콜. 방산 수주잔
- 고가 관전 포인트.\n\n🔗 이 일정 공유하기: https://hottory.
- github.io/invest-schedule-share/?id=1027-03
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:71811483abf87546f5af@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261027T210000
-DTEND;TZID=Asia/Seoul:20261027T213000
-SUMMARY:Sherwin-Williams 3Q 실적(미국 장전)
-DESCRIPTION:📌 관전 포인트\n(장전 발표) 10:00 ET 콜. 페인트 
- 수요·주택/건설 사이클 반영이 관전 포인트.\n\n🔗 이 
- 일정 공유하기: https://hottory.github.io/invest-schedule-share/?id=1
- 027-04
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:94a74804938c25ce22a1@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261027T210000
-DTEND;TZID=Asia/Seoul:20261027T213000
-SUMMARY:UPS 3Q 실적(미국 장전\, 예정)
-DESCRIPTION:📌 관전 포인트\n(장전 발표\, 예정) 물동량·관
- 세/배송 환경\, 4Q 성수기 전망이 관전 포인트.\n\n🔗 이 
- 일정 공유하기: https://hottory.github.io/invest-schedule-share/?id=1
- 027-05
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:f299ad4a913c01ef29bb@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261027T213000
-DTEND;TZID=Asia/Seoul:20261027T220000
-SUMMARY:미국 내구재 주문(9월 예비치)
-DESCRIPTION:📌 관전 포인트\n기업 설비투자 수요 선행지표.
-  FOMC 당일 아침 발표로 금리 결정 직전 심리 영향 가능. (
- 8:30 ET 발표)\n\n🔗 이 일정 공유하기: https://hottory.github.io
- /invest-schedule-share/?id=1027-06
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:00fc13997add6e47cf76@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261027T220000
-DTEND;TZID=Asia/Seoul:20261027T223000
-SUMMARY:미국 S&P/케이스쉴러 주택가격지수(8월)
-DESCRIPTION:📌 관전 포인트\n주택가격 동향 확인. (9:00 ET 발
- 표)\n\n🔗 이 일정 공유하기: https://hottory.github.io/invest-sch
- edule-share/?id=1027-07
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:dc1fb45cfd8d66294a12@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261027T230000
-DTEND;TZID=Asia/Seoul:20261027T233000
-SUMMARY:미국 리치먼드 연은 제조업지수(10월)
-DESCRIPTION:📌 관전 포인트\n지역 제조업 체감 동향. (10:00 E
- T 발표)\n\n🔗 이 일정 공유하기: https://hottory.github.io/inves
- t-schedule-share/?id=1027-10
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:c70d859a919566b0748e@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261027T230000
-DTEND;TZID=Asia/Seoul:20261027T233000
-SUMMARY:미국 신규주택판매(9월\, 예정)
-DESCRIPTION:📌 관전 포인트\n(예정) 주택 수요 실측치. 잠정
- 주택판매와 함께 주택시장 확인. (10:00 ET 발표)\n\n🔗 이 
- 일정 공유하기: https://hottory.github.io/invest-schedule-share/?id=1
- 027-09
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:df5bd2f5917614419dd3@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261027T230000
-DTEND;TZID=Asia/Seoul:20261027T233000
-SUMMARY:미국 컨퍼런스보드 소비자신뢰지수(10월)
-DESCRIPTION:📌 관전 포인트\n소비 여력·심리 지표. 12월 금
- 리 경로 판단의 보조 단서. (10:00 ET 발표)\n\n🔗 이 일정 
- 공유하기: https://hottory.github.io/invest-schedule-share/?id=1027-08
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:d2f8e0b6fcd02044fc77@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261028T060000
-DTEND;TZID=Asia/Seoul:20261028T063000
-SUMMARY:NXP Semiconductors 3Q 실적(미국 장후)
-DESCRIPTION:📌 관전 포인트\n(장후 발표\, 회사 공식 확정) 4
- :30 PM ET 콜. 자동차·산업용 반도체 수요 회복 여부가 관
- 전 포인트.\n\n🔗 이 일정 공유하기: https://hottory.github.io/
- invest-schedule-share/?id=1028-02
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:b80d9c79e686ca6f4fc8@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261028T060000
-DTEND;TZID=Asia/Seoul:20261028T063000
-SUMMARY:Visa 3Q 실적(미국 장후)
-DESCRIPTION:📌 관전 포인트\n(장후 발표) EPS 컨센 $3.43. 결제
- 액·크로스보더 거래량(소비자 지출 건전성 읽기)이 관
- 전 포인트.\n\n🔗 이 일정 공유하기: https://hottory.github.io/
- invest-schedule-share/?id=1028-01
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:151585ae44178d6c3cd1@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261028T090000
-DTEND;TZID=Asia/Seoul:20261028T093000
-SUMMARY:SK하이닉스 3Q 실적
-DESCRIPTION:📌 관전 포인트\n한국 장중 컨콜(회사 공식 발
- 표 확정). 컨센 매출 98.2~98.5조·영업이익 77~80조. 영업이
- 익률 80% 돌파 여부가 최대 관전 포인트. HBM4 공급 확대·D
- 램/낸드 가격 상승·추가 주주환원(30조+ 예상).\n\n🔗 이 
- 일정 공유하기: https://hottory.github.io/invest-schedule-share/?id=1
- 028-03
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:0ae24ad7849ec37c42a8@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261028T130000
-DTEND;TZID=Asia/Seoul:20261028T133000
-SUMMARY:삼성전기 3Q 실적
-DESCRIPTION:📌 관전 포인트\n한국 장중 컨콜. MLCC·반도체 
- 기판이 관전 포인트.\n\n🔗 이 일정 공유하기: https://hotto
- ry.github.io/invest-schedule-share/?id=1028-04
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:824e21b8a03424b343bf@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261028T213000
-DTEND;TZID=Asia/Seoul:20261028T220000
-SUMMARY:미국 도매재고(9월 예비치)
-DESCRIPTION:📌 관전 포인트\n재고 사이클·GDP 산출 참고. (8:
- 30 ET 발표)\n\n🔗 이 일정 공유하기: https://hottory.github.io/i
- nvest-schedule-share/?id=1028-05
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:19f669e1583477551422@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;VALUE=DATE:20261029
-DTEND;VALUE=DATE:20261031
-SUMMARY:BOJ 금융정책결정회의(10/29~30\, 시각 미확정)
-DESCRIPTION:📌 관전 포인트\n회의 일정 10/29~30 확정(BOJ 공식
- ). 성명은 회의 종료 시 발표 — 고정 시각 없음\, 통상 
- 둘째 날 정오 전후 JST. 전망보고서 동반. 현 정책금리 약
-  1.25%(9월 +25bp). 시장 동결 우세\, 12월 추가 인상 여부 주
- 목.\n\n🔗 이 일정 공유하기: https://hottory.github.io/invest-sch
- edule-share/?id=1029-01
-END:VEVENT
-BEGIN:VEVENT
-UID:0b1c593556cc6731f3fd@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;VALUE=DATE:20261029
-DTEND;VALUE=DATE:20261030
-SUMMARY:한국은행 10월 기업경기조사·ESI(시각 미확정)
-DESCRIPTION:📌 관전 포인트\n제조업·비제조업 업황 BSI와 ES
- I 추이. 9월 한경협 전망 BSI(98.6\, 부정 전환) 대비 실제 
- 업황 판단. 날짜 확정\, 시각 미확정.\n\n🔗 이 일정 공유
- 하기: https://hottory.github.io/invest-schedule-share/?id=1029-02
-END:VEVENT
-BEGIN:VEVENT
-UID:44ba2cdf4fd46fa0296a@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261029T030000
-DTEND;TZID=Asia/Seoul:20261029T033000
-SUMMARY:FOMC 10월 금리 결정·성명
-DESCRIPTION:📌 관전 포인트\n회의 10/27~28. 성명 10/28 14:00 ET 
- 발표. 현 기준금리 3.75~4.00%(9/16 +25bp). 시장 10월 동결 약 7
- 5~84%·25bp 인상 15~25%(일별 변동 큼). 점도표 없는 회의.\n\n
- 🔗 이 일정 공유하기: https://hottory.github.io/invest-schedule-sh
- are/?id=1029-03
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:d258185100296b17f131@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261029T033000
-DTEND;TZID=Asia/Seoul:20261029T040000
-SUMMARY:FOMC 의장(Warsh) 기자회견
-DESCRIPTION:📌 관전 포인트\nWarsh 의장 10/28 14:30 ET 기자회견
- . 12월 추가 인상 신호·점도표 없는 회의에서의 가이던
- 스 톤이 관전 포인트.\n\n🔗 이 일정 공유하기: https://hott
- ory.github.io/invest-schedule-share/?id=1029-04
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:9f539790da970615e3e9@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261029T060000
-DTEND;TZID=Asia/Seoul:20261029T063000
-SUMMARY:Alphabet 3Q 실적(미국 장후)
-DESCRIPTION:📌 관전 포인트\n(장후 발표) Search·YouTube 광고 
- 성장\, Gemini 수익화 진전\, 클라우드 capex가 관전 포인트.
- \n\n🔗 이 일정 공유하기: https://hottory.github.io/invest-schedul
- e-share/?id=1029-06
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:e6d8de362beeec8485b9@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261029T060000
-DTEND;TZID=Asia/Seoul:20261029T063000
-SUMMARY:Ford Motor 3Q 실적 (장후)
-DESCRIPTION:📌 관전 포인트\n컨퍼런스콜 관전 포인트: EV 사
- 업·가이던스·픽업 수요. 알림은 Tier B 기준 1일 전 1회.\n
- \n🔗 이 일정 공유하기: https://hottory.github.io/invest-schedule-
- share/?id=1029-20
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:3eb91370bc716e38c47c@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261029T060000
-DTEND;TZID=Asia/Seoul:20261029T063000
-SUMMARY:KLA FY27 1Q 실적(미국 장후)
-DESCRIPTION:📌 관전 포인트\n(장후 발표\, KLA IR 공식 확정) 
- 매출 가이던스 $40억±$2억 달성 여부. 어드밴스드패키징 
- 프로세스컨트롤 수요\, 총마진(62.5%±1pp).\n\n🔗 이 일정 
- 공유하기: https://hottory.github.io/invest-schedule-share/?id=1029-07
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:ef8f1d768e69b1994081@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261029T060000
-DTEND;TZID=Asia/Seoul:20261029T063000
-SUMMARY:Microsoft FY27 1Q 실적(미국 장후)
-DESCRIPTION:📌 관전 포인트\n(장후 발표) Azure 성장률 회복 
- 여부와 AI 인프라 capex 가이던스가 최대 관전 포인트.\n\n
- 🔗 이 일정 공유하기: https://hottory.github.io/invest-schedule-sh
- are/?id=1029-05
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:a2ca5fc4079edfc0beee@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261029T100000
-DTEND;TZID=Asia/Seoul:20261029T103000
-SUMMARY:삼성SDI 3Q 실적
-DESCRIPTION:📌 관전 포인트\n한국 장중 컨콜. 전기차 배터
- 리 수요 회복·ESS가 관전 포인트.\n\n🔗 이 일정 공유하
- 기: https://hottory.github.io/invest-schedule-share/?id=1029-09
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:37f5a113ead5df5a4a2d@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261029T100000
-DTEND;TZID=Asia/Seoul:20261029T103000
-SUMMARY:삼성전자 3Q 확정실적
-DESCRIPTION:📌 관전 포인트\n한국 장중 컨콜(공식 확정). 잠
- 정실적(10/8): 매출 195조·영업이익 107.4조(국내 최초 분기
-  100조 돌파). 사업부별 이익(DS 메모리 기여·DX)\, 메모리 
- 가격·출하 전망\, HBM4\, 2027년 설비투자\, 주주환원 확정 
- 내용.\n\n🔗 이 일정 공유하기: https://hottory.github.io/invest-
- schedule-share/?id=1029-08
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:4862396194ec3f120e0e@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261029T110000
-DTEND;TZID=Asia/Seoul:20261029T113000
-SUMMARY:SK이노베이션 3Q 실적
-DESCRIPTION:📌 관전 포인트\n한국 장중 컨콜. 배터리·정유 
- 마진이 관전 포인트.\n\n🔗 이 일정 공유하기: https://hotto
- ry.github.io/invest-schedule-share/?id=1029-10
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:eb359ac31427ad3e8cd3@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261029T153000
-DTEND;TZID=Asia/Seoul:20261029T160000
-SUMMARY:한화에어로스페이스 3Q 실적
-DESCRIPTION:📌 관전 포인트\n한국 장중 컨콜. 방산 수출 수
- 주가 관전 포인트.\n\n🔗 이 일정 공유하기: https://hottory.
- github.io/invest-schedule-share/?id=1029-11
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:e1da42f1c385ba26a5dc@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261029T210000
-DTEND;TZID=Asia/Seoul:20261029T213000
-SUMMARY:Eli Lilly 3Q 실적(미국 장전\, 예정)
-DESCRIPTION:📌 관전 포인트\n(장전 발표\, 예정) GLP-1(Zepbound
- ·Mounjaro) 매출·생산능력 확대가 관전 포인트.\n\n🔗 이 
- 일정 공유하기: https://hottory.github.io/invest-schedule-share/?id=1
- 029-13
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:7ffbf26f1272a8182a44@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261029T210000
-DTEND;TZID=Asia/Seoul:20261029T213000
-SUMMARY:Mastercard 3Q 실적(미국 장전\, 예정)
-DESCRIPTION:📌 관전 포인트\n(장전 발표\, 예정) EPS 컨센 $5.1
- 6. 결제 네트워크 거래량이 관전 포인트.\n\n🔗 이 일정 
- 공유하기: https://hottory.github.io/invest-schedule-share/?id=1029-12
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:686a82179b4e98e7b9b0@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261029T210000
-DTEND;TZID=Asia/Seoul:20261029T213000
-SUMMARY:Merck 3Q 실적(미국 장전)
-DESCRIPTION:📌 관전 포인트\n(장전 발표\, 회사 공식 확정) 9
- :00 ET 콜. Keytruda 매출(컨센 $74.5억)\, 2028년 특허 만료 대
- 비 파이프라인.\n\n🔗 이 일정 공유하기: https://hottory.gith
- ub.io/invest-schedule-share/?id=1029-14
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:e2c6a2cb9717fc307d94@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261029T213000
-DTEND;TZID=Asia/Seoul:20261029T220000
-SUMMARY:미국 3분기 GDP 속보치
-DESCRIPTION:📌 관전 포인트\n시장 전망 연율 3.1%(2분기 2.2%).
-  GDP 가격지수 동반 발표 — 성장·인플레 동시 확인. (8:30
-  ET 발표)\n\n🔗 이 일정 공유하기: https://hottory.github.io/inv
- est-schedule-share/?id=1029-16
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:cc0520f5f19a1c42eef7@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261029T213000
-DTEND;TZID=Asia/Seoul:20261029T220000
-SUMMARY:미국 9월 PCE 물가지수·개인소득/소비지출
-DESCRIPTION:📌 관전 포인트\n연준 선호 인플레 지표. 9월 PCE
-  전년 대비 시장 전망 3.2%(직전 3.4%)\, 코어 PCE 전월비 0.2%
- . FOMC 결정 다음 날 발표. (8:30 ET 발표)\n\n🔗 이 일정 공
- 유하기: https://hottory.github.io/invest-schedule-share/?id=1029-15
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:b3b6dced9dd3f016fdfd@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261029T213000
-DTEND;TZID=Asia/Seoul:20261029T220000
-SUMMARY:미국 주간 신규 실업수당 청구건수
-DESCRIPTION:📌 관전 포인트\nFOMC 다음 날 주간 지표. 노동시
- 장 냉각 여부. (8:30 ET 발표)\n\n🔗 이 일정 공유하기: https
- ://hottory.github.io/invest-schedule-share/?id=1029-17
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:4c61198c57226720c1f3@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261029T221500
-DTEND;TZID=Asia/Seoul:20261029T224500
-SUMMARY:ECB 통화정책회의 금리 결정
-DESCRIPTION:📌 관전 포인트\n14:15 CET 발표(유럽 10/25 CET 전환
-  후). 현 수신금리 2.50%·리파이낸싱 2.65%·한계대출 2.90%. 
- 시장 컨센서스 동결 우세. 분기 전망 없는 회의.\n\n🔗 
- 이 일정 공유하기: https://hottory.github.io/invest-schedule-share/?
- id=1029-18
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:f247529d9cf102c1eaad@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261029T224500
-DTEND;TZID=Asia/Seoul:20261029T231500
-SUMMARY:ECB Lagarde 총재 기자회견
-DESCRIPTION:📌 관전 포인트\n14:45 CET. 9월 유로존 인플레 3.8%
- (8월 3.2%) 상승 속 추가 긴축 신호 여부가 관전 포인트.\n\
- n🔗 이 일정 공유하기: https://hottory.github.io/invest-schedule-s
- hare/?id=1029-19
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:c680f8c0fbd95dbded29@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261030T060000
-DTEND;TZID=Asia/Seoul:20261030T063000
-SUMMARY:Amazon 3Q 실적(미국 장후)
-DESCRIPTION:📌 관전 포인트\n(장후 발표) EPS 컨센 $1.96·매출
-  $202.1B. AWS 성장률·마진 회복\, 광고 부문이 관전 포인트
- .\n\n🔗 이 일정 공유하기: https://hottory.github.io/invest-schedu
- le-share/?id=1030-01
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:3d5f701837bfb99efc2e@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261030T060000
-DTEND;TZID=Asia/Seoul:20261030T063000
-SUMMARY:Intel 3Q 실적(미국 장후)
-DESCRIPTION:📌 관전 포인트\n(장후 발표\, 회사 공식 확정) 2
- :00 PM PT 콜. 파운드리 턴어라운드·손익분기 시점\, 제품 
- 로드맵 진전이 관전 포인트.\n\n🔗 이 일정 공유하기: htt
- ps://hottory.github.io/invest-schedule-share/?id=1030-02
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:83b50c308bf8d88db0bf@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261030T060000
-DTEND;TZID=Asia/Seoul:20261030T063000
-SUMMARY:Monolithic Power(MPWR) 3Q 실적(미국 장후)
-DESCRIPTION:📌 관전 포인트\n(장후 발표\, 회사 공식 확정) 2
- :00 PM PT 웨비나. EPS 컨센 $6.53(+75.5% YoY). AI 서버 전력 반도
- 체 수요가 관전 포인트.\n\n🔗 이 일정 공유하기: https://h
- ottory.github.io/invest-schedule-share/?id=1030-03
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:1c69fc1903f107cab5fe@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261030T080000
-DTEND;TZID=Asia/Seoul:20261030T083000
-SUMMARY:통계청 9월 산업활동동향
-DESCRIPTION:📌 관전 포인트\n광공업생산·소매판매·설비투
- 자 3대 지표. 반도체 생산 증가세 지속 여부와 내수(소매
- 판매) 회복 강도. GDP 속보(10/23 예정)와 교차 확인.\n\n🔗 
- 이 일정 공유하기: https://hottory.github.io/invest-schedule-share/?
- id=1030-04
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:b3a1b9c759f0483132f5@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261030T101000
-DTEND;TZID=Asia/Seoul:20261030T104000
-SUMMARY:현대모비스 3Q 실적
-DESCRIPTION:📌 관전 포인트\n한국 장중 컨콜. ASP·인센티브
- ·미국 판매가 관전 포인트.\n\n🔗 이 일정 공유하기: http
- s://hottory.github.io/invest-schedule-share/?id=1030-05
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:95aa58ca5817d33f1f38@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261030T141000
-DTEND;TZID=Asia/Seoul:20261030T144000
-SUMMARY:기아 3Q 실적
-DESCRIPTION:📌 관전 포인트\n한국 장중 컨콜. ASP·인센티브
- ·미국 판매가 관전 포인트.\n\n🔗 이 일정 공유하기: http
- s://hottory.github.io/invest-schedule-share/?id=1030-06
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:4cf686cb6dadb024d4e2@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261030T210000
-DTEND;TZID=Asia/Seoul:20261030T213000
-SUMMARY:AbbVie 3Q 실적(미국 장전)
-DESCRIPTION:📌 관전 포인트\n(장전 발표\, 회사 공식 확정) 8
- :00 CT(22:00 KST) 콜. Skyrizi·Rinvoq 성장세. Q3 조정 EPS 가이던
- 스 하향($3.73~3.77 vs 컨센 $3.85)\, 연간 가이던스($13.76~13.96)
- .\n\n🔗 이 일정 공유하기: https://hottory.github.io/invest-schedu
- le-share/?id=1030-07
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:6d693f938aa900fac918@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261030T210000
-DTEND;TZID=Asia/Seoul:20261030T213000
-SUMMARY:Chevron 3Q 실적(미국 장전\, 예정)
-DESCRIPTION:📌 관전 포인트\n(장전 발표\, 예정) 생산량·주
- 주환원이 관전 포인트.\n\n🔗 이 일정 공유하기: https://ho
- ttory.github.io/invest-schedule-share/?id=1030-09
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:fa335ebdab8eb310cbec@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261030T210000
-DTEND;TZID=Asia/Seoul:20261030T213000
-SUMMARY:Exxon Mobil 3Q 실적(미국 장전\, 예정)
-DESCRIPTION:📌 관전 포인트\n(장전 발표\, 예정) EPS 컨센 $3.8
- 0·매출 $110.14B. 유가·정제 마진\, 주주환원이 관전 포인
- 트.\n\n🔗 이 일정 공유하기: https://hottory.github.io/invest-sch
- edule-share/?id=1030-08
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:adcacbe16fb11de32a57@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261030T213000
-DTEND;TZID=Asia/Seoul:20261030T220000
-SUMMARY:미국 3분기 고용비용지수(ECI)
-DESCRIPTION:📌 관전 포인트\n임금 인플레 측정 핵심 지표. 
- 연준의 임금-물가 전이 판단 재료. (8:30 ET 발표)\n\n🔗 이
-  일정 공유하기: https://hottory.github.io/invest-schedule-share/?id=
- 1030-10
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:4807a4eb5add24fddf17@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261030T224500
-DTEND;TZID=Asia/Seoul:20261030T231500
-SUMMARY:미국 시카고 PMI(10월)
-DESCRIPTION:📌 관전 포인트\n중서부 제조업 체감. 50 기준선
-  위아래가 관전 포인트. (9:45 ET 발표)\n\n🔗 이 일정 공유
- 하기: https://hottory.github.io/invest-schedule-share/?id=1030-11
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:433c72b6478f19a05b40@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261031T103000
-DTEND;TZID=Asia/Seoul:20261031T110000
-SUMMARY:중국 NBS 10월 제조업 PMI(예정)
-DESCRIPTION:📌 관전 포인트\n(예정) 9월 50.1(2개월 만에 확장
- 선 복귀) 이후 추이 유지 여부. 내수·부동산 부진 속 생
- 산 동력 지속성.\n\n🔗 이 일정 공유하기: https://hottory.git
- hub.io/invest-schedule-share/?id=1031-01
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:a08f97cb879acbec45a6@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261101T090000
-DTEND;TZID=Asia/Seoul:20261101T093000
-SUMMARY:산업통상부 10월 수출입동향(예정)
-DESCRIPTION:📌 관전 포인트\n(예정) 월간 수출 사상 첫 1\,200
- 억 달러대 연속 돌파 여부(9월 1\,209억 달러 역대 최대). 
- 반도체 수출 비중(9월 약 50%) 지속성. 무역흑자 규모와 
- 연간 수출 1조 달러 달성 궤도. 11/1 일요일이나 휴일 발
- 표 전례 있음.\n\n🔗 이 일정 공유하기: https://hottory.github
- .io/invest-schedule-share/?id=1101-01
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:1dc1d381279ce2632183@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261102T080000
-DTEND;TZID=Asia/Seoul:20261102T083000
-SUMMARY:한국 10월 소비자물가지수(CPI\, 예정)
-DESCRIPTION:📌 관전 포인트\n(예정) 9월 전년비 2.9% 이후 추
- 이. 11/26 금통위 전 마지막 물가 단서로\, 2%대 고착 여부
- 가 관전 포인트. (통상 08:00 KST 발표)\n\n🔗 이 일정 공유
- 하기: https://hottory.github.io/invest-schedule-share/?id=1102-01
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:44c6a0c5b14608efc43e@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261102T104500
-DTEND;TZID=Asia/Seoul:20261102T111500
-SUMMARY:중국 Caixin 제조업 PMI(10월)
-DESCRIPTION:📌 관전 포인트\n민간·중소기업 체감 제조업 
- 지표. 10/31 NBS PMI와 교차 확인. (09:45 CST 발표)\n\n🔗 이 일
- 정 공유하기: https://hottory.github.io/invest-schedule-share/?id=1102
- -02
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:53fa4ed1491554863779@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261103T000000
-DTEND;TZID=Asia/Seoul:20261103T003000
-SUMMARY:미국 ISM 제조업 PMI(10월)
-DESCRIPTION:📌 관전 포인트\n50 기준선 위아래와 신규주문·
- 고용 세부항목이 관전 포인트. (11/2 10:00 ET 발표\, 서머타
- 임 종료 후 ET+14h로 KST 11/3 00:00)\n\n🔗 이 일정 공유하기: 
- https://hottory.github.io/invest-schedule-share/?id=1103-01
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:6c54473a704a1442a0b0@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;VALUE=DATE:20261103
-DTEND;VALUE=DATE:20261104
-SUMMARY:미국 중간선거 투표일
-DESCRIPTION:📌 관전 포인트\n상·하원 및 주지사 선거 투표
- 일(미국 현지 11/3\, 시장은 정상 개장). 의회 다수당 향방
- 이 재정·규제 정책 기대에 미치는 영향이 관전 포인트.\
- n\n🔗 이 일정 공유하기: https://hottory.github.io/invest-schedule
- -share/?id=1103-02
-END:VEVENT
-BEGIN:VEVENT
-UID:435981fb36f7b35eb806@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261103T060000
-DTEND;TZID=Asia/Seoul:20261103T063000
-SUMMARY:Apple FY26 4Q 실적(미국 장후)
-DESCRIPTION:📌 관전 포인트\n(장후 발표\, 11/2 17:00 ET 콜) 아
- 이폰 신제품 사이클 초기 수요\, 서비스 부문 성장\, 중
- 국 매출 회복 여부가 관전 포인트.\n\n🔗 이 일정 공유하
- 기: https://hottory.github.io/invest-schedule-share/?id=1103-03
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:4d5362c44a4014291fe2@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261103T060000
-DTEND;TZID=Asia/Seoul:20261103T063000
-SUMMARY:Palantir 3Q 실적(미국 장후)
-DESCRIPTION:📌 관전 포인트\n(장후 발표\, 11/2 17:00 ET 콜\, 회
- 사 공식 확정) 상업 부문 성장 지속 여부와 정부 계약 모
- 멘텀이 관전 포인트.\n\n🔗 이 일정 공유하기: https://hotto
- ry.github.io/invest-schedule-share/?id=1103-04
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:622712079d4215013d00@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261103T160000
-DTEND;TZID=Asia/Seoul:20261103T163000
-SUMMARY:카카오페이 3Q 실적
-DESCRIPTION:📌 관전 포인트\n16:00 KST 컨콜(회사 공시 확정). 
- 결제·금융서비스 성장과 톡비즈 연계가 관전 포인트.\n\
- n🔗 이 일정 공유하기: https://hottory.github.io/invest-schedule-s
- hare/?id=1103-05
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:fde5c5e1b2dc38478d9f@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261104T000000
-DTEND;TZID=Asia/Seoul:20261104T003000
-SUMMARY:미국 JOLTS 구인·이직 보고서(9월)
-DESCRIPTION:📌 관전 포인트\n구인건수 추이로 노동수요 냉
- 각 여부 확인. 11/6 고용보고서 전초 지표. (11/3 10:00 ET 발
- 표\, KST 11/4 00:00)\n\n🔗 이 일정 공유하기: https://hottory.git
- hub.io/invest-schedule-share/?id=1104-01
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:63638b51f402f3c244b1@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261104T060000
-DTEND;TZID=Asia/Seoul:20261104T063000
-SUMMARY:AMD 3Q 실적(미국 장후)
-DESCRIPTION:📌 관전 포인트\n(장후 발표\, 11/3 17:00 ET 콜\, AMD
-  뉴스룸 공식 확정) 데이터센터 매출·MI450 램프·2027년 
- 전망이 최대 관전 포인트. 컨센서스 매출 약 130억 달러.\
- n\n🔗 이 일정 공유하기: https://hottory.github.io/invest-schedule
- -share/?id=1104-02
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:0907b8340cb12e776c37@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261104T100000
-DTEND;TZID=Asia/Seoul:20261104T103000
-SUMMARY:카카오뱅크 3Q 잠정실적
-DESCRIPTION:📌 관전 포인트\n10:00 KST 컨콜(회사 공시 확정). 
- 순이자마진·대출 성장·플랫폼 수익이 관전 포인트. 잠
- 정치로 외부감사 후 수정 가능.\n\n🔗 이 일정 공유하기:
-  https://hottory.github.io/invest-schedule-share/?id=1104-03
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:aefdbd8c0619365738d6@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261104T221500
-DTEND;TZID=Asia/Seoul:20261104T224500
-SUMMARY:ADP 민간고용보고서(10월)
-DESCRIPTION:📌 관전 포인트\n9월 민간고용 +9만 명 이후 둔
- 화 지속 여부. 11/6 BLS 고용보고서 전초 지표. (11/4 08:15 ET 
- 발표)\n\n🔗 이 일정 공유하기: https://hottory.github.io/invest-
- schedule-share/?id=1104-04
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:6b1beb8fbc369bcb65ec@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261104T223000
-DTEND;TZID=Asia/Seoul:20261104T230000
-SUMMARY:미국 재무부 분기 리펀딩 발표
-DESCRIPTION:📌 관전 포인트\n분기 국채 발행 규모와 장기물
-  비중 — 금리·수급에 미치는 영향이 관전 포인트. (11/4 
- 08:30 ET 발표)\n\n🔗 이 일정 공유하기: https://hottory.github.i
- o/invest-schedule-share/?id=1104-05
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:f537284e55cdb99027bf@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261105T000000
-DTEND;TZID=Asia/Seoul:20261105T003000
-SUMMARY:미국 ISM 서비스업 PMI(10월)
-DESCRIPTION:📌 관전 포인트\n서비스업 체감과 고용·가격 
- 세부항목이 관전 포인트. (11/4 10:00 ET 발표\, KST 11/5 00:00)\
- n\n🔗 이 일정 공유하기: https://hottory.github.io/invest-schedule
- -share/?id=1105-01
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:1d992cd75b9a3ae3335c@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261106
-SUMMARY:카카오 3Q 실적(시각 미확정)
-DESCRIPTION:📌 관전 포인트\n발표일 11/5 확인\, 컨콜 시각 
- 미확인. 톡비즈·콘텐츠 실적과 AI 수익화 진전이 관전 
- 포인트.\n\n🔗 이 일정 공유하기: https://hottory.github.io/inve
- st-schedule-share/?id=1105-02
-END:VEVENT
-BEGIN:VEVENT
-UID:6ab90963d894c534c5cc@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;VALUE=DATE:20261105
-DTEND;VALUE=DATE:20261106
-SUMMARY:한국 외환보유액(10월말\, 예정)
-DESCRIPTION:📌 관전 포인트\n(예정) 9월말 4\,406억 달러 이후
-  증감. 원화·외환시장 안정성 참고 지표.\n\n🔗 이 일정 
- 공유하기: https://hottory.github.io/invest-schedule-share/?id=1105-03
-END:VEVENT
-BEGIN:VEVENT
-UID:fd6c03a9425990714821@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261105T060000
-DTEND;TZID=Asia/Seoul:20261105T063000
-SUMMARY:Arm FY27 2Q 실적(미국 장후)
-DESCRIPTION:📌 관전 포인트\n(장후 발표\, 11/4 17:00 ET 콜\, Arm
-  뉴스룸 공식 확정) 로열티·라이선스 매출과 AI·데이터
- 센터 라이선스 확대가 관전 포인트.\n\n🔗 이 일정 공유
- 하기: https://hottory.github.io/invest-schedule-share/?id=1105-04
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:cb753c8579a34876ef4f@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261105T060000
-DTEND;TZID=Asia/Seoul:20261105T063000
-SUMMARY:Qualcomm FY26 4Q 실적(미국 장후)
-DESCRIPTION:📌 관전 포인트\n(장후 발표\, 11/4 13:45 PT 콜\, Qua
- lcomm IR 공식 확정) 핸드셋 수요와 비핸드셋(자동차·IoT) 
- 비중 확대\, FY27 가이던스가 관전 포인트.\n\n🔗 이 일정 
- 공유하기: https://hottory.github.io/invest-schedule-share/?id=1105-05
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:5dbc70aac5a8b7f6c691@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261105T104500
-DTEND;TZID=Asia/Seoul:20261105T111500
-SUMMARY:중국 Caixin 서비스업 PMI(10월)
-DESCRIPTION:📌 관전 포인트\n민간 서비스업 체감 지표. 내
- 수 서비스 회복 강도가 관전 포인트. (09:45 CST 발표)\n\n
- 🔗 이 일정 공유하기: https://hottory.github.io/invest-schedule-sh
- are/?id=1105-06
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:cd29a87408c763e6d647@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261105T223000
-DTEND;TZID=Asia/Seoul:20261105T230000
-SUMMARY:미국 3분기 생산성·단위노동비용(예비치)
-DESCRIPTION:📌 관전 포인트\n생산성 개선 여부와 단위노동
- 비용 상승률이 임금 인플레 압력 단서. (11/5 08:30 ET 발표)
- \n\n🔗 이 일정 공유하기: https://hottory.github.io/invest-schedul
- e-share/?id=1105-07
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-UID:3f65f0785ab210d36ca8@invest.muse
-DTSTAMP:20261025T145117Z
-DTSTART;TZID=Asia/Seoul:20261105T223000
-DTEND;TZID=Asia/Seoul:20261105T230000
-SUMMARY:미국 주간 신규 실업수당 청구건수
-DESCRIPTION:📌 관전 포인트\n주간 청구건수 추이로 노동시
- 장 냉각 여부 확인. (11/5 08:30 ET 발표)\n\n🔗 이 일정 공유
- 하기: https://hottory.github.io/invest-schedule-share/?id=1105-08
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-P1D
-END:VALARM
-BEGIN:VALARM
-ACTION:DISPLAY
-TRIGGER:-PT1H
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 UID:292eb525d54ecdc083c6@invest.muse
-DTSTAMP:20261025T145117Z
+DTSTAMP:20261105T160057Z
 DTSTART;TZID=Asia/Seoul:20261106T223000
 DTEND;TZID=Asia/Seoul:20261106T230000
 SUMMARY:미국 고용보고서(10월)
@@ -1317,7 +26,7 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 UID:ed3caf0d6a99a7029788@invest.muse
-DTSTAMP:20261025T145117Z
+DTSTAMP:20261105T160057Z
 DTSTART;TZID=Asia/Seoul:20261107T000000
 DTEND;TZID=Asia/Seoul:20261107T003000
 SUMMARY:미국 미시간대 소비자심리지수 예비치(11월)
@@ -1325,6 +34,324 @@ DESCRIPTION:📌 관전 포인트\n소비자 심리 + 1년 기대인플레
  이션이 관전 포인트. (11/6 10:00 ET 발표\, KST 11/7 00:00)\n\n
  🔗 이 일정 공유하기: https://hottory.github.io/invest-schedule-sh
  are/?id=1107-01
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0e2d28270c0d82ba99a9@invest.muse
+DTSTAMP:20261105T160057Z
+DTSTART;TZID=Asia/Seoul:20261109T103000
+DTEND;TZID=Asia/Seoul:20261109T110000
+SUMMARY:중국 10월 CPI·PPI
+DESCRIPTION:📌 관전 포인트\n09:30 CST 발표. 9월 CPI 전년 0.9%·
+ PPI 전년 5.0% 이후 추이\, 중국 디플레 압력 완화 여부가 
+ 관전 포인트.\n\n🔗 이 일정 공유하기: https://hottory.github.
+ io/invest-schedule-share/?id=1109-01
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:68cad8500dfab38318ca@invest.muse
+DTSTAMP:20261105T160057Z
+DTSTART;TZID=Asia/Seoul:20261110T000000
+DTEND;TZID=Asia/Seoul:20261110T003000
+SUMMARY:시카고 연은 굴스비 총재 대담(Leadership Greater Chicago
+ )
+DESCRIPTION:📌 관전 포인트\n시카고 연은 총재\, Leadership Gre
+ ater Chicago 행사 모더레이트 Q&A. 9:00 CT(10:00 ET) 시작\, KST 11
+ /10 00:00. 12월 FOMC 전 연준 인사 발언.\n\n🔗 이 일정 공유
+ 하기: https://hottory.github.io/invest-schedule-share/?id=1110-01
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:369f60e07b7b73366bd4@invest.muse
+DTSTAMP:20261105T160057Z
+DTSTART;TZID=Asia/Seoul:20261110T170000
+DTEND;TZID=Asia/Seoul:20261110T173000
+SUMMARY:TSMC 10월 월간 매출(예정)
+DESCRIPTION:📌 관전 포인트\nTSMC IR 캘린더상 11/10 공표. 9월 
+ 매출 NT$512B·전년 +54.6% 이후\, 4분기 가이던스(매출 $52.3~5
+ 4.3B) 달성 궤도 확인. (통상 오후 장 마감 후 발표)\n\n🔗 
+ 이 일정 공유하기: https://hottory.github.io/invest-schedule-share/?
+ id=1110-02
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:3724afadac658425f8fb@invest.muse
+DTSTAMP:20261105T160057Z
+DTSTART;TZID=Asia/Seoul:20261110T200000
+DTEND;TZID=Asia/Seoul:20261110T203000
+SUMMARY:미국 NFIB 소기업 낙관지수(10월)
+DESCRIPTION:📌 관전 포인트\n06:00 ET 발표. 소기업 체감 경기
+ 와 고용·가격 계획이 관전 포인트.\n\n🔗 이 일정 공유
+ 하기: https://hottory.github.io/invest-schedule-share/?id=1110-03
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:0049841585f98ea7a1d2@invest.muse
+DTSTAMP:20261105T160057Z
+DTSTART;TZID=Asia/Seoul:20261110T223000
+DTEND;TZID=Asia/Seoul:20261110T230000
+SUMMARY:미국 10월 소비자물가지수(CPI)
+DESCRIPTION:📌 관전 포인트\nBLS 공식 일정 8:30 ET 발표. 헤드
+ 라인·코어 전년비\, 12월 FOMC 전 핵심 물가 단서. 9월 CPI 
+ 전년 3.7%.\n\n🔗 이 일정 공유하기: https://hottory.github.io/in
+ vest-schedule-share/?id=1110-04
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:8c6a0a063c88faf852c3@invest.muse
+DTSTAMP:20261105T160057Z
+DTSTART;VALUE=DATE:20261111
+DTEND;VALUE=DATE:20261112
+SUMMARY:미국 재향군인의 날(채권시장 휴장)
+DESCRIPTION:📌 관전 포인트\n미국 주식시장 정상 개장\, 국
+ 채시장 휴장. 거래량 감소에 따른 변동성 확대 가능성에
+  유의.\n\n🔗 이 일정 공유하기: https://hottory.github.io/invest
+ -schedule-share/?id=1111-01
+END:VEVENT
+BEGIN:VEVENT
+UID:93cc29f9fe45f90978d9@invest.muse
+DTSTAMP:20261105T160057Z
+DTSTART;TZID=Asia/Seoul:20261111T060000
+DTEND;TZID=Asia/Seoul:20261111T063000
+SUMMARY:CoreWeave 3Q 실적(미국 장후)
+DESCRIPTION:📌 관전 포인트\n(장후 발표\, 11/10 17:00 ET 컨콜\,
+  회사 공시 확정) AI 클라우드 매출 성장 지속 여부와 적
+ 자 축소·자금 조달이 관전 포인트. 2Q 매출 $2.58B·전년 +1
+ 12%.\n\n🔗 이 일정 공유하기: https://hottory.github.io/invest-sch
+ edule-share/?id=1111-02
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bab46ad446074f9815a5@invest.muse
+DTSTAMP:20261105T160057Z
+DTSTART;TZID=Asia/Seoul:20261111T080000
+DTEND;TZID=Asia/Seoul:20261111T083000
+SUMMARY:한국 10월 고용동향
+DESCRIPTION:📌 관전 포인트\n국가데이터처 보도계획상 11.11
+ .(수) 공표 확정. 9월 취업자 +11.3만 명 이후 증가세 지속 
+ 여부\, 제조업 고용 반등 지속 여부가 관전 포인트. 08:00 
+ KST 발표.\n\n🔗 이 일정 공유하기: https://hottory.github.io/inv
+ est-schedule-share/?id=1111-03
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:bc548916bc9599a8a1d6@invest.muse
+DTSTAMP:20261105T160057Z
+DTSTART;TZID=Asia/Seoul:20261112T160000
+DTEND;TZID=Asia/Seoul:20261112T163000
+SUMMARY:영국 3분기 GDP(예비치)
+DESCRIPTION:📌 관전 포인트\n07:00 GMT 발표. 3분기 성장률 예
+ 비치\, 영국 경기 둔화 여부 확인.\n\n🔗 이 일정 공유하
+ 기: https://hottory.github.io/invest-schedule-share/?id=1112-01
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:99df2c715552978d72b9@invest.muse
+DTSTAMP:20261105T160057Z
+DTSTART;TZID=Asia/Seoul:20261112T213000
+DTEND;TZID=Asia/Seoul:20261112T220000
+SUMMARY:Nebius Group 3Q 실적(미국 장전)
+DESCRIPTION:📌 관전 포인트\n(장전 발표\, 8:00 ET 컨콜\, 회사
+  공시 확정 10/30) AI 인프라 매출 전환 속도와 2026년 매출 
+ 가이던스($3.0~3.4B) 달성 궤도가 관전 포인트. 컨센서스 3Q
+  매출 약 $905M.\n\n🔗 이 일정 공유하기: https://hottory.github
+ .io/invest-schedule-share/?id=1112-02
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1d854131298f724f0776@invest.muse
+DTSTAMP:20261105T160057Z
+DTSTART;TZID=Asia/Seoul:20261112T223000
+DTEND;TZID=Asia/Seoul:20261112T230000
+SUMMARY:미국 주간 신규 실업수당 청구건수
+DESCRIPTION:📌 관전 포인트\n8:30 ET 발표. 노동시장 냉각 여
+ 부 주간 체크.\n\n🔗 이 일정 공유하기: https://hottory.github
+ .io/invest-schedule-share/?id=1112-03
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:c07ad83c430f4b8832c9@invest.muse
+DTSTAMP:20261105T160057Z
+DTSTART;TZID=Asia/Seoul:20261113T000000
+DTEND;TZID=Asia/Seoul:20261113T003000
+SUMMARY:미국 10월 기존주택판매
+DESCRIPTION:📌 관전 포인트\n11/12 10:00 ET 발표. 금리 민감 주
+ 택시장 회복 여부\, 매물·가격 추이가 관전 포인트.\n\n
+ 🔗 이 일정 공유하기: https://hottory.github.io/invest-schedule-sh
+ are/?id=1113-01
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:28b4304e9072b86bfdb7@invest.muse
+DTSTAMP:20261105T160057Z
+DTSTART;TZID=Asia/Seoul:20261113T013000
+DTEND;TZID=Asia/Seoul:20261113T020000
+SUMMARY:시카고 연은 굴스비 총재 대담(Yahoo Finance Invest 2026)
+DESCRIPTION:📌 관전 포인트\n시카고 연은 총재\, Yahoo Finance 
+ Invest 2026 모더레이트 Q&A(가상 참여). 10:30 CT(11:30 ET) 시작\
+ , KST 11/13 01:30. 12월 FOMC 전 연준 인사 발언.\n\n🔗 이 일정
+  공유하기: https://hottory.github.io/invest-schedule-share/?id=1113-02
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1762a277f1f971e18846@invest.muse
+DTSTAMP:20261105T160057Z
+DTSTART;TZID=Asia/Seoul:20261113T060000
+DTEND;TZID=Asia/Seoul:20261113T063000
+SUMMARY:Applied Materials FY26 4Q 실적(미국 장후)
+DESCRIPTION:📌 관전 포인트\n(장후 발표\, 11/12 16:30 ET 콜\, 
+ 회사 공시 확정 10/22) 가이던스 매출 $10.25B±$0.5B·조정 EPS
+  $4.02±$0.20 달성 여부\, 반도체 장비 수요 지속 여부가 관
+ 전 포인트.\n\n🔗 이 일정 공유하기: https://hottory.github.io/
+ invest-schedule-share/?id=1113-03
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:7827ac345dfddc7f6844@invest.muse
+DTSTAMP:20261105T160057Z
+DTSTART;TZID=Asia/Seoul:20261113T060000
+DTEND;TZID=Asia/Seoul:20261113T063000
+SUMMARY:Cisco FY27 1Q 실적(미국 장후)
+DESCRIPTION:📌 관전 포인트\n(장후 발표\, 11/12 16:30 ET 콜\, 
+ 회사 Q4 콜에서 공시 확정) 가이던스 매출 $18.0~18.2B 달성 
+ 여부\, AI 인프라 매출 $7.5B 목표 궤도가 관전 포인트.\n\n
+ 🔗 이 일정 공유하기: https://hottory.github.io/invest-schedule-sh
+ are/?id=1113-04
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:1e711076ba8ffa945c49@invest.muse
+DTSTAMP:20261105T160057Z
+DTSTART;TZID=Asia/Seoul:20261113T190000
+DTEND;TZID=Asia/Seoul:20261113T193000
+SUMMARY:유로존 3분기 GDP(2차 추정치)
+DESCRIPTION:📌 관전 포인트\n11:00 CET 발표. 3분기 성장률 2차
+  추정치 확정.\n\n🔗 이 일정 공유하기: https://hottory.github
+ .io/invest-schedule-share/?id=1113-05
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-P1D
+END:VALARM
+BEGIN:VALARM
+ACTION:DISPLAY
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:b8c49b48d1a04efacae8@invest.muse
+DTSTAMP:20261105T160057Z
+DTSTART;TZID=Asia/Seoul:20261113T223000
+DTEND;TZID=Asia/Seoul:20261113T230000
+SUMMARY:미국 10월 생산자물가지수(PPI)
+DESCRIPTION:📌 관전 포인트\nBLS 공식 일정 8:30 ET 발표. CPI에
+  이은 생산자 물가 확인\, 12월 FOMC 전 마지막 주요 물가 
+ 지표.\n\n🔗 이 일정 공유하기: https://hottory.github.io/invest-
+ schedule-share/?id=1113-06
 BEGIN:VALARM
 ACTION:DISPLAY
 TRIGGER:-P1D
