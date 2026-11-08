@@ -987,7 +987,7 @@
             var w = weekOf(it);
             if (w !== lastWeek) {
               lastWeek = w;
-              var wOpen = (w === 1);
+              var wOpen = (w === 1) || (w === 2 && weekCounts[1] <= 3); // 금주 남은 일정 3건 이하면 다음 주도 자동 펼침 (2026-11-08)
               var wHead = document.createElement("button");
               wHead.type = "button";
               wHead.className = "week-head";
