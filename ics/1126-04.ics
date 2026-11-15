@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//투자 일정 공유//KO
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:1e1798910eeef82f9ab7@invest.muse
+DTSTAMP:20261115T120009Z
+DTSTART;VALUE=DATE:20261126
+DTEND;VALUE=DATE:20261127
+SUMMARY:한국은행 금통위(통화정책방향)
+DESCRIPTION:올해 마지막 금리 결정(오전 발표\, 총재 기자간
+ 담회 동반). 현 기준금리 3.00%(7·8월 연속 인상 후 10/22 만
+ 장일치 동결)\, 시장 25bp 인상(3.25%) 전망 우세. 수정 경제
+ 전망·금리 경로(dot plot) 동반 발표 여부가 관전 포인트.
+END:VEVENT
+END:VCALENDAR
